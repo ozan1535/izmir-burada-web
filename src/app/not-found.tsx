@@ -1,5 +1,14 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export async function generateMetadata() {
+  const metadata: Metadata = {
+    title: "Sayfa Bulunamadı - İzmir Burada",
+  };
+
+  return metadata;
+}
 
 export default function NotFound() {
   return (
