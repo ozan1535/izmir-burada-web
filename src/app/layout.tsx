@@ -14,6 +14,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const revalidate = 3600;
+
 export default function RootLayout({
   children,
 }: Readonly<{
