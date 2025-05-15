@@ -20,7 +20,13 @@ function PictureBoxes({ items }) {
                 className={`absolute inset-0 ${item.bgColor} group-hover:opacity-80 group-hover:duration-500 bg-opacity-50 z-10`}
               ></div>
 
-              <div className="absolute bottom-0 left-0 z-20 p-4 text-white hidden group-hover:block">
+              {/* <div className="absolute bottom-0 left-0 z-20 p-4 text-white hidden group-hover:block">
+                <p className="text-sm">{item.secondaryText}</p>
+                <p className="font-bold text-lg">
+                  {item.text.toLocaleUpperCase("tr-TR")}
+                </p>
+              </div> */}
+              <div className="absolute bottom-0 left-0 z-20 p-4 text-white block lg:hidden lg:group-hover:block">
                 <p className="text-sm">{item.secondaryText}</p>
                 <p className="font-bold text-lg">
                   {item.text.toLocaleUpperCase("tr-TR")}
