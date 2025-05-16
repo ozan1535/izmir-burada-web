@@ -6,11 +6,7 @@ import {
   homePageTastes,
   homePageUnforgettablePlaces,
 } from "@/components/PictureBoxes/helpers";
-import SwiperItems from "@/components/SwiperItems/SwiperItems";
-import {
-  homePageImportantLinks,
-  mainSlidesSources,
-} from "@/components/SwiperItems/helpers";
+import { homePageImportantLinks } from "@/components/SwiperItems/helpers";
 import { createMetadata } from "@/utils/helpers";
 
 export async function generateMetadata() {
@@ -26,17 +22,56 @@ export async function generateMetadata() {
 export default function Home() {
   return (
     <div>
-      <SwiperItems
-        swiperClassName="w-full h-screen"
-        swiperSlideClassName="relative w-full h-screen"
-        items={mainSlidesSources}
-      />
+      <div className="w-full h-screen flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-12 bg-blue-100">
+        <div className="w-full md:w-1/2 text-center md:text-left z-10">
+          <h1 className="text-4xl md:text-5xl font-bold text-sky-600 mb-4">
+            İzmir'e Dair Her Şey Burada!
+          </h1>
+          <p className="text-base md:text-lg text-gray-600 mb-6">
+            Turistik yerler, namaz vakitleri, nöbetçi eczaneler, otobüs saatleri
+            ve daha fazlası —{" "}
+            <span className="font-bold text-2xl text-sky-600">
+              İzmir Burada
+            </span>
+          </p>
+          <Link
+            href={
+              "https://play.google.com/store/apps/details?id=com.ozan1535.izmirburada"
+            }
+            target="_blank"
+            className="flex flex-col items-center md:items-start"
+          >
+            <p className="text-sky-600 font-bold">Ücretsiz indirin</p>
+            <img
+              src="/assets/play_store.webp"
+              className="h-10 mt-3"
+              alt="Google Play Logo"
+            />
+          </Link>
+        </div>
 
-      <div className="w-full bg-white">
+        {/* Right Side - Image */}
+        <div className="w-full md:w-1/2 flex justify-center">
+          <img
+            src="/assets/main-image.png"
+            alt="İzmir Görseli"
+            className="w-full h-auto z-10"
+          />
+        </div>
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <img
+            src="/assets/down-arrow.svg"
+            alt="İzmir Görseli"
+            className="w-16 h-auto z-10"
+          />
+        </div>
+      </div>
+
+      <div className="w-full">
         <div className="flex flex-col md:flex-row justify-center items-center p-10 gap-6">
           <p className="w-full md:w-80 text-xl md:text-2xl font-semibold text-blue-400 text-center md:text-left">
             Hayat İzmir’de akıyor, senin için her şey{" "}
-            <span className="text-blue-500 font-bold">BURADA!</span>
+            <span className="font-black">BURADA!</span>
           </p>
 
           <div className="relative w-full max-w-xs md:max-w-xl aspect-[3/3] md:aspect-[3/1]">
