@@ -23,8 +23,8 @@ function Footer() {
               target="_blank"
             >
               <img
-                src="/assets/google-play-icon.svg"
-                className="h-8 mt-3"
+                src="/assets/play_store.webp"
+                className="h-10 mt-3"
                 alt="Google Play Logo"
               />
             </a>
