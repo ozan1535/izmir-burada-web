@@ -22,7 +22,7 @@ export async function generateMetadata() {
 export default function Home() {
   return (
     <div>
-      <div className="w-full h-screen flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-12 bg-blue-100">
+      <div className="relative w-full h-[120vh] md:h-screen flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-12 bg-blue-100 pt-16">
         <div className="w-full md:w-1/2 text-center md:text-left z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-sky-600 mb-4">
             İzmir'e Dair Her Şey Burada!
@@ -50,19 +50,18 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Right Side - Image */}
-        <div className="w-full md:w-1/2 flex justify-center">
+        <div className="w-full md:w-1/2 flex justify-center z-10">
           <img
             src="/assets/main-image.png"
             alt="İzmir Görseli"
-            className="w-full h-auto z-10"
+            className="w-full max-h-96 object-contain md:max-h-full"
           />
         </div>
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute hidden md:block bottom-0 left-1/2 transform -translate-x-1/2 z-20">
           <img
             src="/assets/down-arrow.svg"
-            alt="İzmir Görseli"
-            className="w-16 h-auto z-10"
+            alt="Scroll Down"
+            className="w-12 h-auto animate-bounce"
           />
         </div>
       </div>
