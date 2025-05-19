@@ -2,7 +2,6 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const hatNo = searchParams.get("hatNo");
 
-  console.log(hatNo, "hatnoalayim");
   const response = await fetch(
     `https://acikveri.bizizmir.com/api/3/action/datastore_search_sql?sql=SELECT%20*%20FROM%20%22c6fa6046-f755-47d7-b69e-db6bb06a8b5a%22%20WHERE%20%22HAT_NO%22%20%3D%20${hatNo}%20ORDER%20BY%20%22_id%22%20ASC`
   );

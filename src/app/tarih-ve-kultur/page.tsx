@@ -12,6 +12,7 @@ import {
 import React from "react";
 
 import OpenModal from "@/components/Modal/OpenModal/OpenModal";
+import { IOnemliYer } from "@/utils/types";
 
 export async function generateMetadata() {
   return createMetadata(
@@ -24,7 +25,7 @@ export async function generateMetadata() {
 }
 
 async function page() {
-  const data = await fetchData([
+  const data = await fetchData<IOnemliYer>([
     "https://openapi.izmir.bel.tr/api/ibb/cbs/antikkentler",
     "https://openapi.izmir.bel.tr/api/ibb/cbs/kuleanitveheykeller",
     "https://openapi.izmir.bel.tr/api/ibb/cbs/tarihiyapilar",

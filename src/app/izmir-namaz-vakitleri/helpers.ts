@@ -1,4 +1,5 @@
 import { getCurrentDate } from "@/utils/helpers";
+import { INamazVakitleri, IPrayerTimes } from "./namazVakitleri.types";
 
 export const namazVakitleriTableHeaderItems = [
   {
@@ -70,7 +71,7 @@ export const namazVakitleriKeys = [
   },
 ];
 
-export const getPrayerTimes = (currentDateItems) => {
+export const getPrayerTimes = (currentDateItems: INamazVakitleri) => {
   return [
     { label: "İmsak", time: currentDateItems?.Imsak },
     { label: "Güneş", time: currentDateItems?.Gunes },
@@ -81,16 +82,16 @@ export const getPrayerTimes = (currentDateItems) => {
   ];
 };
 
-export const getTimeInMinutes = (timeString) => {
+export const getTimeInMinutes = (timeString: string) => {
   const [hours, minutes] = timeString.split(":").map(Number);
   return hours * 60 + minutes;
 };
 
-export const getCurrentDateItems = (data) => {
+export const getCurrentDateItems = (data: INamazVakitleri[]) => {
   return data.find((item) => item.MiladiTarihKisa === getCurrentDate());
 };
 
-export const getNextPrayer = (prayerTimes) => {
+export const getNextPrayer = (prayerTimes: IPrayerTimes[]) => {
   const currentTime = new Date();
   const currentMinutes = currentTime.getHours() * 60 + currentTime.getMinutes();
 

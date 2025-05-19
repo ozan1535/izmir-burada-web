@@ -1,8 +1,9 @@
-import Table from "@/components/Table/Table";
 import React from "react";
+import Table from "@/components/Table/Table";
 import { sonDepremlerKeys, sonDepremlerTableHeaderItems } from "./helpers";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
-import { createMetadata } from "@/utils/helpers";
+import { createMetadata, fetchData } from "@/utils/helpers";
+import { ISonDeprem } from "./sonDepremler.types";
 
 export async function generateMetadata() {
   return createMetadata(
@@ -15,17 +16,15 @@ export async function generateMetadata() {
 }
 
 async function page() {
-  const response = await fetch(
-    "https://www.mertsenturk.net/deprem/api/location/izmir/limit/30"
-  );
-
-  const data = await response.json();
+  const data = await fetchData<ISonDeprem[]>([
+    "https://www.mertsenturk.net/deprem/api/location/izmir/limit/30",
+  ]);
   return (
     <PageTemplate title={"İzmir Son Depremler"}>
       <br />
       <Table
         headItems={sonDepremlerTableHeaderItems}
-        data={data}
+        data={data[0]}
         keys={sonDepremlerKeys}
       />
     </PageTemplate>

@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { linkBuilders } from "@/utils/helpers";
+import { ITable } from "./Table.types";
 
-function Table({ headItems, data, keys, customComponent = null }) {
+function Table({ headItems, data, keys, customComponent = null }: ITable) {
   return (
     <div className="relative overflow-x-auto h-[70vh] mb-10">
       <table className="w-full text-sm text-left rtl:text-right text-gray-500">

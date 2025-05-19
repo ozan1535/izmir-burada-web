@@ -24,7 +24,7 @@ export const AccordionItem = ({
       </button>
       {expanded && (
         <div className="p-2 bg-white">
-          <p>{children}</p>
+          <div>{children}</div>
         </div>
       )}
     </div>

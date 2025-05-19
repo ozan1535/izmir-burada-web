@@ -12,10 +12,15 @@ import {
   getFormattedData,
 } from "@/app/izmir-otobus-saatleri/helpers";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
+import { INameAndId } from "@/utils/types";
+import { IOtobusSaatleri } from "@/app/izmir-otobus-saatleri/otobusSaatleri.types";
 
 function SwiperTable() {
-  const [selected, setSelected] = useState(null);
-  const [data, setData] = useState([]);
+  const [selected, setSelected] = useState<INameAndId | null>(null);
+  const [data, setData] = useState<IOtobusSaatleri>({
+    busHours: [],
+    busInformation: [],
+  });
   const { busHours, busInformation } = data;
 
   useEffect(() => {

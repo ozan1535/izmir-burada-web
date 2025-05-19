@@ -1,21 +1,25 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import { getFilteredNames, handleRemove, handleSelect } from "./helpers";
+import { IDropdownWithSearch } from "./DropdownWithSearch.types";
 
 export default function DropdownWithSearch({
   items,
   selected,
   setSelected,
   placeholder,
-}) {
+}: IDropdownWithSearch) {
   const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
-  const wrapperRef = useRef(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const filteredNames = getFilteredNames(items, query);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     };

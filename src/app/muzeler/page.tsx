@@ -9,6 +9,7 @@ import {
 } from "@/utils/helpers";
 import React from "react";
 import OpenModal from "@/components/Modal/OpenModal/OpenModal";
+import { ICommonType } from "@/utils/types";
 export async function generateMetadata() {
   return createMetadata(
     "Müzeler - İzmir Burada",
@@ -20,7 +21,7 @@ export async function generateMetadata() {
 }
 
 async function page() {
-  const data = await fetchData([
+  const data = await fetchData<ICommonType>([
     "https://openapi.izmir.bel.tr/api/ibb/cbs/muzeler",
   ]);
   return (

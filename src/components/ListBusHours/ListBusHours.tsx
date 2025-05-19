@@ -1,7 +1,17 @@
 import React from "react";
 import BusScheduleColumn from "./BusScheduleColumn";
+import {
+  FormattedDayData,
+  IBusInformation,
+} from "@/app/izmir-otobus-saatleri/otobusSaatleri.types";
 
-function ListBusHours({ singleBusData, busInformation }) {
+function ListBusHours({
+  singleBusData,
+  busInformation,
+}: {
+  singleBusData: FormattedDayData;
+  busInformation: IBusInformation[];
+}) {
   return (
     <div className="bg-gray-50">
       <h1 className="text-center py-4 text-lg font-semibold text-gray-800">

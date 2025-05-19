@@ -1,6 +1,7 @@
 import React from "react";
 import {
   createMetadata,
+  fetchData,
   getFormattedDate,
   izmirDistincts,
 } from "@/utils/helpers";
@@ -10,6 +11,7 @@ import {
 } from "./helpers";
 import DropdownAndTableClientComponent from "@/components/DropdownAndTableClientComponent/DropdownAndTableClientComponent";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
+import { INobetciEczane } from "./nobetciEczaneler.types";
 
 export async function generateMetadata() {
   return createMetadata(
@@ -22,19 +24,14 @@ export async function generateMetadata() {
 }
 
 async function page() {
-  const response = await fetch(
-    "https://openapi.izmir.bel.tr/api/ibb/nobetcieczaneler"
-  );
-
-  const data = await response.json();
+  const data = await fetchData<INobetciEczane[]>([
+    "https://openapi.izmir.bel.tr/api/ibb/nobetcieczaneler",
+  ]);
 
   return (
     <PageTemplate title={"İzmir Nöbetçi Eczaneler"}>
-      <p className="text-center py-4 text-xl font-semibold text-sky-800">
-        {getFormattedDate("tr")}
-      </p>
       <DropdownAndTableClientComponent
-        data={data}
+        data={data[0]}
         itemsForDropdownWithSearch={izmirDistincts}
         itemToFilter={"Bolge"}
         placeholder={"İlçe ara"}

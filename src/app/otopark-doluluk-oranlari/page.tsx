@@ -1,17 +1,16 @@
 import { AccordionItem } from "@/components/AccordionItem/AccordionItem";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
+import { fetchData } from "@/utils/helpers";
+import { IParkingData } from "./otopark.types";
 
 async function page() {
-  const response = await fetch(
-    "https://openapi.izmir.bel.tr/api/ibb/izum/otoparklar"
-  );
-
-  const data = await response.json();
-
+  const data = await fetchData<IParkingData[]>([
+    "https://openapi.izmir.bel.tr/api/ibb/izum/otoparklar",
+  ]);
   return (
     <PageTemplate title={"İzmir Otopark Doluluk Oranlari"}>
       <br />
-      {data.map((item) => (
+      {data[0].map((item) => (
         <div className="bg-gray-800 rounded-lg mx-5 my-2" key={item.ufid}>
           <div className="px-5 py-2 flex flex-col gap-2">
             <p className="text-white font-extrabold text-lg">{item.name}</p>
@@ -19,8 +18,8 @@ async function page() {
               Durum: {item.status === "Opened" ? "Açık" : "Kapalı"}
             </p>
             <p className="text-white font-bold text-md">
-              Doluluk: {item.occupancy.total.occupied} /{" "}
-              {item.occupancy.total.occupied + item.occupancy.total.free}
+              Doluluk: {item.occupancy?.total.occupied} /{" "}
+              {item.occupancy?.total.occupied + item.occupancy?.total.free}
             </p>
             <p className="text-white font-bold text-md">
               {item.isPaid

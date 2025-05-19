@@ -1,6 +1,7 @@
 import React from "react";
+import { IModal } from "./Modal.types";
 
-function Modal({ title, modalContent, onClick }) {
+function Modal({ title, modalContent, onClick }: IModal) {
   return (
     <div className="fixed inset-0 z-50 flex justify-center items-center overflow-y-auto overflow-x-hidden">
       <div className="relative p-4 w-full max-w-2xl max-h-full">

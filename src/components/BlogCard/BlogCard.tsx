@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
+import { IBlogCard } from "./BlogCard.types";
 
-function BlogCard({ imageSource, title, description, link }) {
+function BlogCard({ imageSource, title, description, link }: IBlogCard) {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer">
       <Link href={link}>

@@ -15,6 +15,7 @@ import {
 } from "./helpers";
 import Countdown from "@/components/Countdown/Countdown";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
+import { INamazVakitleri } from "./namazVakitleri.types";
 
 export async function generateMetadata() {
   return createMetadata(
@@ -26,12 +27,12 @@ export async function generateMetadata() {
   );
 }
 async function page() {
-  const ezanlar = await fetchData([
+  const ezanlar = await fetchData<INamazVakitleri[]>([
     "https://ezanvakti.emushaf.net/vakitler/9560",
   ]);
   const data = ezanlar[0];
   const currentDateItems = getCurrentDateItems(data);
-  const prayerTimes = getPrayerTimes(currentDateItems);
+  const prayerTimes = currentDateItems ? getPrayerTimes(currentDateItems) : [];
   const nextPrayer = getNextPrayer(prayerTimes);
 
   return (
@@ -40,11 +41,11 @@ async function page() {
         <div className="flex flex-wrap justify-center items-center text-center text-sky-100 text-lg font-bold mt-4">
           <div>
             <p>{getFormattedDate("tr")}</p>
-            <p>{currentDateItems.HicriTarihUzun}</p>
+            <p>{currentDateItems?.HicriTarihUzun}</p>
           </div>
           <div>
             <Image
-              src={currentDateItems.AyinSekliURL}
+              src={currentDateItems?.AyinSekliURL || ""}
               width={100}
               height={100}
               alt="Ayın Sekli"

@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import DropdownWithSearch from "../DropdownWithSearch/DropdownWithSearch";
-import { izmirDistincts } from "@/utils/helpers";
 import Table from "../Table/Table";
+import { INameAndId } from "@/utils/types";
+import { IDropdownAndTableClientComponent } from "./DropdownAndTableClientComponent.types";
 
 export default function DropdownAndTableClientComponent({
   data,
@@ -12,8 +13,8 @@ export default function DropdownAndTableClientComponent({
   headItems,
   keys,
   customComponent = null,
-}) {
-  const [selected, setSelected] = useState(null);
+}: IDropdownAndTableClientComponent) {
+  const [selected, setSelected] = useState<null | INameAndId>(null);
 
   const filteredData = selected
     ? data.filter(

@@ -1,23 +1,27 @@
+import Image from "next/image";
+import React from "react";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
 import { blogs } from "@/utils/blogs";
 import { createMetadata } from "@/utils/helpers";
-import Image from "next/image";
-import React from "react";
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const singleBlogData = blogs.find((blog) => blog.slug === slug);
 
   return createMetadata(
     singleBlogData?.title as string,
     singleBlogData?.description as string,
-    singleBlogData?.tags,
+    singleBlogData?.tags as string,
     singleBlogData?.coverImage as string,
     singleBlogData?.slug as string
   );
 }
 
-async function page({ params }) {
+async function page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
 
   const singleBlogData = blogs.find((blog) => blog.slug === slug);

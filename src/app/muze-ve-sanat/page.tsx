@@ -11,6 +11,7 @@ import {
   IzmirTowns,
 } from "@/utils/helpers";
 import OpenModal from "@/components/Modal/OpenModal/OpenModal";
+import { IOnemliYer } from "@/utils/types";
 
 export async function generateMetadata() {
   return createMetadata(
@@ -23,7 +24,7 @@ export async function generateMetadata() {
 }
 
 async function page() {
-  const data = await fetchData([
+  const data = await fetchData<IOnemliYer>([
     "https://openapi.izmir.bel.tr/api/ibb/cbs/muzeler",
     "https://openapi.izmir.bel.tr/api/ibb/cbs/kulturmerkezleri",
     "https://openapi.izmir.bel.tr/api/ibb/cbs/galerivesalonlar",

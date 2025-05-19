@@ -1,6 +1,12 @@
 import React from "react";
+import { ISearchInput } from "./searchInput.types";
 
-function SearchInput({ placeholder, searchValue, setSearchValue, onClick }) {
+function SearchInput({
+  placeholder,
+  searchValue,
+  setSearchValue,
+  onClick,
+}: ISearchInput) {
   return (
     <div className="my-4">
       <div className="relative">

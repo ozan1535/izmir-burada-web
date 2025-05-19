@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Modal from "../Modal";
+import { IOpenModal } from "../Modal.types";
 
-function OpenModal({ title, modalContent }) {
+function OpenModal({ title, modalContent }: IOpenModal) {
   const [canModalOpen, setCanModalOpen] = useState(false);
 
   return (

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { IOnemliYer } from "./types";
 
 export const categories_TR = [
   {
@@ -176,12 +177,10 @@ export const locations_TR = [
   },
 ];
 
-export function getFormattedDate(language: string) {
-  // Get the current date
+export function getFormattedDate(language: "en" | "tr" | "de"): string {
   const currentDate = new Date();
 
-  // Arrays to map month names and weekdays to different languages
-  const months = {
+  const months: Record<"en" | "tr" | "de", string[]> = {
     en: [
       "January",
       "February",
@@ -226,7 +225,7 @@ export function getFormattedDate(language: string) {
     ],
   };
 
-  const weekdays = {
+  const weekdays: Record<"en" | "tr" | "de", string[]> = {
     en: [
       "Sunday",
       "Monday",
@@ -256,16 +255,12 @@ export function getFormattedDate(language: string) {
     ],
   };
 
-  // Get the day, month, year, and weekday
-  const day = currentDate.getDate(); // Don't pad the day with zeros
-  const month = months[language][currentDate.getMonth()]; // Get the month id:0,name in the selected language
+  const day = currentDate.getDate();
+  const month = months[language][currentDate.getMonth()];
   const year = currentDate.getFullYear();
-  const weekday = weekdays[language][currentDate.getDay()]; // Get the weekday id:0,name in the selected language
+  const weekday = weekdays[language][currentDate.getDay()];
 
-  // Format the date as "d MMMM yyyy dddd" (e.g., "6 Mayıs 2025 Salı")
-  const formattedDate = `${day} ${month} ${year} ${weekday}`;
-
-  return formattedDate;
+  return `${day} ${month} ${year} ${weekday}`;
 }
 
 export function getCurrentDate() {
@@ -580,24 +575,28 @@ export async function fetchData<T = unknown>(urls: string[]): Promise<T[]> {
   }
 }
 
-export const linkBuilders = {
+export const linkBuilders: { [key: string]: (item: any) => string } = {
   pharmacyLink: (item) =>
     `https://maps.google.com/?q=${item.LokasyonX},${item.LokasyonY}`,
   commonLocationInTurkish: (item) =>
     `https://maps.google.com/?q=${item.ENLEM},${item.BOYLAM}`,
 };
 
-export const getNestedValue = (obj, path) => {
+export const getNestedValue = (obj: Record<string, any>, path: string): any => {
   return path
     .split(".")
     .reduce((acc, part) => (acc ? acc[part] : undefined), obj);
 };
 
-export const flatMapData = (items, dataPath, mapFunction) => {
-  // Flatten and extract the necessary data based on the provided path
+// A utility to flatten mapped nested data from a list of objects
+export const flatMapData = (
+  items: any[],
+  dataPath: string,
+  mapFunction: (records: any[]) => any[]
+) => {
   return items.flatMap((response) => {
-    const records = getNestedValue(response, dataPath); // Dynamically extract the data based on the path
-    return mapFunction(records); // Apply the custom mapping function
+    const records = getNestedValue(response as IOnemliYer, dataPath);
+    return mapFunction(records);
   });
 };
 
@@ -642,7 +641,9 @@ export const commonKeysWithCustomComponentAndLinkBuilder = [
   },
 ];
 
-export const getCommonMappingWithLocationAndDetail = (records) => {
+export const getCommonMappingWithLocationAndDetail = (
+  records: IOnemliYer[]
+) => {
   return records.map(({ ILCE, ADI, ENLEM, BOYLAM, ACIKLAMA }) => ({
     ILCE,
     ADI,

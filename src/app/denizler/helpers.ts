@@ -1,5 +1,7 @@
-export const getDenizlerMapping = (records) => {
-  return records.map(({ ILCE, ADI, ENLEM, BOYLAM }) => ({
+import { IDenizler } from "./denizler.types";
+
+export const getDenizlerMapping = (records: IDenizler[]) => {
+  return records.map(({ ILCE, ADI, ENLEM, BOYLAM }: IDenizler) => ({
     ILCE,
     ADI,
     ENLEM,

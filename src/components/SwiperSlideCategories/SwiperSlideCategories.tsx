@@ -3,9 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import CategoryBox from "../CategoryBoxes/CategoryBox/CategoryBox";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import { ISwiperSlideCategory } from "./swiperSlideCategories.types";
 
-function SwiperSlideCategories({ items, canAutoPlay = false }) {
-  console.log(items);
+function SwiperSlideCategories({
+  items,
+  canAutoPlay = false,
+}: {
+  items: ISwiperSlideCategory[];
+  canAutoPlay?: boolean;
+}) {
   return (
     <Swiper
       slidesPerView={1} // Default for mobile

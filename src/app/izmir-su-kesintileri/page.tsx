@@ -1,6 +1,7 @@
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
 import { createMetadata } from "@/utils/helpers";
 import React from "react";
+import { ISuKesintileri } from "./suKesintileri.types";
 
 export async function generateMetadata() {
   return createMetadata(
@@ -17,7 +18,7 @@ async function page() {
     "https://openapi.izmir.bel.tr/api/izsu/arizakaynaklisukesintileri"
   );
 
-  const data = await response.json();
+  const data: ISuKesintileri[] = await response.json();
 
   return (
     <PageTemplate title={"İzmir Su Kesintileri"}>

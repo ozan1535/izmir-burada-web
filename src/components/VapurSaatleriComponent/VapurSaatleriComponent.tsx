@@ -4,12 +4,14 @@ import DropdownWithSearch from "@/components/DropdownWithSearch/DropdownWithSear
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
 import { days, fetchData, ports } from "@/utils/helpers";
 import RenderFerryTable from "@/components/RenderFerryTable/RenderFerryTable";
+import { IHatData } from "./vapurSaatleriComponent.types";
+import { INameAndId } from "@/utils/types";
 
 function VapurSaatleriComponent() {
-  const [departure, setDeparture] = useState(null);
-  const [arrival, setArrival] = useState(null);
-  const [day, setDay] = useState(null);
-  const [data, setData] = useState([]);
+  const [departure, setDeparture] = useState<INameAndId | null>(null);
+  const [arrival, setArrival] = useState<INameAndId | null>(null);
+  const [day, setDay] = useState<INameAndId | null>(null);
+  const [data, setData] = useState<IHatData[][]>([]);
 
   const fetchItems = async () => {
     if (!departure || !arrival || !day) {
@@ -22,7 +24,7 @@ function VapurSaatleriComponent() {
       return;
     }
 
-    const data = await fetchData([
+    const data = await fetchData<IHatData[]>([
       `https://openapi.izmir.bel.tr/api/izdeniz/vapursaatleri/${departure.id}/${arrival.id}/${day.id}/0`,
     ]);
     setData(data);

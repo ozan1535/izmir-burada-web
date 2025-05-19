@@ -10,6 +10,8 @@ import {
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
 import DropdownAndTableClientComponent from "@/components/DropdownAndTableClientComponent/DropdownAndTableClientComponent";
 import { getDenizlerMapping } from "./helpers";
+import { IOnemliYer } from "@/utils/types";
+import { IDenizler } from "./denizler.types";
 
 export async function generateMetadata() {
   return createMetadata(
@@ -27,7 +29,7 @@ async function page() {
     "https://openapi.izmir.bel.tr/api/ibb/cbs/mavibayrakplajlar",
   ];
 
-  const data = await fetchData(urls);
+  const data = await fetchData<IDenizler>(urls);
 
   const configuredToilets = flatMapData(data, "onemliyer", getDenizlerMapping);
 

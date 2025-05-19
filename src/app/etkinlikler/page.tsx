@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { createMetadata, fetchData } from "@/utils/helpers";
+import { IEtkinlik } from "./etkinlikler.types";
 
 export async function generateMetadata() {
   return createMetadata(
@@ -14,13 +15,14 @@ export async function generateMetadata() {
 }
 
 async function etkinlikler() {
-  const events = await fetchData([
+  const events = await fetchData<IEtkinlik[]>([
     "https://openapi.izmir.bel.tr/api/ibb/kultursanat/etkinlikler",
   ]);
 
   const sortedEvents = events[0].sort(
     (a, b) =>
-      new Date(b.EtkinlikBaslamaTarihi) - new Date(a.EtkinlikBaslamaTarihi)
+      new Date(b.EtkinlikBaslamaTarihi).getTime() -
+      new Date(a.EtkinlikBaslamaTarihi).getTime()
   );
 
   return (

@@ -1,13 +1,13 @@
 import React from "react";
 import { getPortNameById } from "@/app/izmir-vapur-saatleri/helpers";
+import { IHatData } from "../VapurSaatleriComponent/vapurSaatleriComponent.types";
 
-function RenderFerryTable({ data }) {
+function RenderFerryTable({ data }: { data: IHatData[][] }) {
   if (!data.length) return null;
 
   const route = data[0][0];
   const departureName = getPortNameById(route.iskeleler[0]);
   const arrivalName = getPortNameById(route.iskeleler[1]);
-
   return (
     <div className="flex flex-col items-center justify-center">
       <p className="py-4 text-xl font-semibold">

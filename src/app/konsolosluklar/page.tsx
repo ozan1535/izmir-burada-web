@@ -8,6 +8,7 @@ import {
   fetchData,
   IzmirTowns,
 } from "@/utils/helpers";
+import { ICommonType } from "@/utils/types";
 
 export async function generateMetadata() {
   return createMetadata(
@@ -20,9 +21,10 @@ export async function generateMetadata() {
 }
 
 async function page() {
-  const data = await fetchData([
-    "https://openapi.izmir.bel.tr/api/ibb/cbs/muzeler",
+  const data = await fetchData<ICommonType>([
+    "https://openapi.izmir.bel.tr/api/ibb/cbs/konsolosluklar",
   ]);
+
   return (
     <PageTemplate title="Konsolosluk Konumları">
       <DropdownAndTableClientComponent

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 // Helper function to create a valid Date object for the prayer time
-function getPrayerDate(prayerTime) {
+function getPrayerDate(prayerTime: string): Date {
   const currentDate = new Date();
   const [hours, minutes] = prayerTime.split(":").map(Number); // Split and convert time to numbers
   currentDate.setHours(hours, minutes, 0, 0); // Set hours and minutes to the prayer time
@@ -10,11 +10,11 @@ function getPrayerDate(prayerTime) {
 }
 
 // Helper function to format numbers with leading zero
-function formatWithLeadingZero(number) {
+function formatWithLeadingZero(number: number) {
   return number < 10 ? `0${number}` : number;
 }
 
-const Countdown = ({ targetTime }) => {
+const Countdown = ({ targetTime }: { targetTime: string }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetTime));
 
   // Update the countdown every second
@@ -27,11 +27,11 @@ const Countdown = ({ targetTime }) => {
     return () => clearInterval(intervalId);
   }, [targetTime]);
 
-  function calculateTimeLeft(targetTime) {
+  function calculateTimeLeft(targetTime: string) {
     const currentTime = new Date();
     const targetDate = getPrayerDate(targetTime); // Get a valid Date object
 
-    const timeDiff = targetDate - currentTime;
+    const timeDiff = targetDate.getTime() - currentTime.getTime();
 
     if (timeDiff <= 0) {
       return { hours: 0, minutes: 0, seconds: 0 };
