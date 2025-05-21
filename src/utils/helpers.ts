@@ -1,7 +1,93 @@
 import { Metadata } from "next";
 import { IOnemliYer } from "./types";
 
-export const categories_TR = [
+export const categories = [
+  {
+    id: 0,
+    name: {
+      tr: "TARİH VE KÜLTÜR",
+      en: "HISTORY AND CULTURE",
+      de: "GESCHICHTE UND KULTUR",
+    },
+    href: {
+      tr: "/tarih-ve-kultur",
+      en: "/tarih-ve-kultur",
+      de: "/tarih-ve-kultur",
+    },
+    media: "/assets/boxImages/tarih-ve-kultur.png",
+  },
+  {
+    id: 2,
+    name: {
+      tr: "DENİZLER",
+      en: "SEAS",
+      de: "MEERE",
+    },
+    href: {
+      tr: "/denizler",
+      en: "/denizler",
+      de: "/denizler",
+    },
+    media: "/assets/boxImages/denizler.png",
+  },
+  {
+    id: 1,
+    name: {
+      tr: "DOĞA VE AGRO",
+      en: "NATURE AND AGRO",
+      de: "NATUR UND AGRO",
+    },
+    href: {
+      tr: "/doga-ve-agro",
+      en: "/doga-ve-agro",
+      de: "/doga-ve-agro",
+    },
+    media: "/assets/boxImages/doga-ve-agro.png",
+  },
+  {
+    id: 4,
+    name: {
+      tr: "MÜZE VE SANAT",
+      en: "MUSEUMS AND ART",
+      de: "MUSEEN UND KUNST",
+    },
+    href: {
+      tr: "/muze-ve-sanat",
+      en: "/muze-ve-sanat",
+      de: "/muze-ve-sanat",
+    },
+    media: "/assets/boxImages/muze-ve-sanat.png",
+  },
+  {
+    id: 5,
+    name: {
+      tr: "ALIŞVERİŞ",
+      en: "SHOPPING",
+      de: "EINKAUFEN",
+    },
+    href: {
+      tr: "/alisveris",
+      en: "/alisveris",
+      de: "/alisveris",
+    },
+    media: "/assets/boxImages/alisveris.png",
+  },
+  {
+    id: 8,
+    name: {
+      tr: "ETKİNLİKLER",
+      en: "EVENTS",
+      de: "VERANSTALTUNGEN",
+    },
+    href: {
+      tr: "/etkinlikler",
+      en: "/events",
+      de: "/veranstaltungen",
+    },
+    media: "/assets/boxImages/etkinlikler.png",
+  },
+];
+/* [
   {
     //https://openapi.izmir.bel.tr/api/ibb/cbs/kuleanitveheykeller
     //https://openapi.izmir.bel.tr/api/ibb/cbs/tarihicarsivehanlar
@@ -22,12 +108,12 @@ export const categories_TR = [
     href: "denizler",
     media: "/assets/boxImages/denizler.png",
   },
-  /*  {
-    id: 3,
-    name: "Inanç",
-    href: "inanc",
-    media: "",
-  }, */
+  //   {
+  //   id: 3,
+  //   name: "Inanç",
+  //   href: "inanc",
+  //   media: "",
+  // }, 
   {
     //https://openapi.izmir.bel.tr/api/ibb/cbs/kaplicalar
     //https://openapi.izmir.bel.tr/api/ibb/cbs/hamamlar
@@ -38,12 +124,12 @@ export const categories_TR = [
     href: "doga-ve-agro",
     media: "/assets/boxImages/doga-ve-agro.png",
   },
-  /* {
-    id: 10,
-    name: "Lezzetler",
-    href: "lezzetler",
-    media: "",
-  }, */
+  // {
+  //   id: 10,
+  //   name: "Lezzetler",
+  //   href: "lezzetler",
+  //   media: "",
+  // },
   {
     //https://openapi.izmir.bel.tr/api/ibb/cbs/muzeler
     //https://acikveri.bizizmir.com/dataset/kultur-ve-sanat-merkezleri
@@ -68,111 +154,223 @@ export const categories_TR = [
     href: "etkinlikler",
     media: "/assets/boxImages/etkinlikler.png",
   },
-  /* {
-    //https://acikveri.bizizmir.com/api/3/action/datastore_search?resource_id=165358a6-a4fe-48df-9e3b-e6a310329d96
-    id: 9,
-    name: "Kardeş Kentler",
-    href: "kardes-kentler",
-    media: "",
-  }, */
-  /*  {
-    //https://acikveri.bizizmir.com/api/3/action/datastore_search?resource_id=165358a6-a4fe-48df-9e3b-e6a310329d96
-    id: 11,
-    name: "Konumlar",
-    href: "konumlar",
-    media: "",
-  }, */
-];
+  // {
+  //   //https://acikveri.bizizmir.com/api/3/action/datastore_search?resource_id=165358a6-a4fe-48df-9e3b-e6a310329d96
+  //   id: 9,
+  //   name: "Kardeş Kentler",
+  //   href: "kardes-kentler",
+  //   media: "",
+  // }, 
+  //   {
+  //   //https://acikveri.bizizmir.com/api/3/action/datastore_search?resource_id=165358a6-a4fe-48df-9e3b-e6a310329d96
+  //   id: 11,
+  //   name: "Konumlar",
+  //   href: "konumlar",
+  //   media: "",
+  // }, 
+]; */
 
-export const usefulInformations_TR = [
+export const usefulInformations = [
   {
     id: 0,
-    name: "NAMAZ VAKİTLERİ",
-    href: "izmir-namaz-vakitleri",
+    name: {
+      tr: "NAMAZ VAKİTLERİ",
+      en: "PRAYING TIMES",
+      de: "GEBETSZEITEN",
+    },
+    href: {
+      tr: "/izmir-namaz-vakitleri",
+      en: "/izmir-praying-times",
+      de: "/izmir-gebetszeiten",
+    },
     media: "/assets/boxImages/namaz-vakitleri.png",
   },
   {
     id: 1,
-    name: "NÖBETÇİ ECZANELER",
-    href: "izmir-nobetci-eczaneler",
+    name: {
+      tr: "NÖBETÇİ ECZANELER",
+      en: "ON-DUTY PHARMACIES",
+      de: "APOTHEKEN IM DIENST",
+    },
+    href: {
+      tr: "/izmir-nobetci-eczaneler",
+      en: "/on-duty-pharmacies-in-izmir",
+      de: "/apotheke-im-dienst-in-izmir",
+    },
     media: "/assets/boxImages/nobetcieczane.png",
   },
   {
     id: 2,
-    name: "SON DEPREMLER",
-    href: "izmir-son-depremler",
+    name: {
+      tr: "SON DEPREMLER",
+      en: "RECENT EARTHQUAKES",
+      de: "LETZTE ERDBEBEN",
+    },
+    href: {
+      tr: "/izmir-son-depremler",
+      en: "/recent-earthquakes-in-izmir",
+      de: "/letzte-erdbeben-in-izmir",
+    },
     media: "/assets/boxImages/son-depremler.png",
   },
   {
     id: 3,
-    name: "SU KESİNTİLERİ",
-    href: "izmir-su-kesintileri",
+    name: {
+      tr: "SU KESİNTİLERİ",
+      en: "WATER OUTAGES",
+      de: "WASSERUNTERBRECHUNGEN",
+    },
+    href: {
+      tr: "/izmir-su-kesintileri",
+      en: "/water-outages-in-izmir",
+      de: "/wasserunterbrechungen-in-izmir",
+    },
     media: "/assets/boxImages/su-kesintileri.png",
   },
   {
     id: 4,
-    name: "ETKİNLİKLER",
-    href: "etkinlikler",
+    name: {
+      tr: "ETKİNLİKLER",
+      en: "EVENTS",
+      de: "VERANSTALTUNGEN",
+    },
+    href: {
+      tr: "/etkinlikler",
+      en: "/events",
+      de: "/veranstaltungen",
+    },
     media: "/assets/boxImages/etkinlikler.png",
   },
 ];
 
-export const transportation_TR = [
+export const transportation = [
   {
     id: 0,
-    name: "OTOBÜS SAATLERİ",
-    href: "izmir-otobus-saatleri",
+    name: {
+      tr: "OTOBÜS SAATLERİ",
+      en: "BUS SCHEDULES",
+      de: "BUSFAHRPLÄNE",
+    },
+    href: {
+      tr: "/izmir-otobus-saatleri",
+      en: "/izmir-bus-schedules",
+      de: "/izmir-busfahrpläne",
+    },
     media: "/assets/boxImages/otobussaatleri.png",
   },
   {
     id: 1,
-    name: "OTOBÜSÜM NEREDE",
-    href: "otobusum-nerede",
+    name: {
+      tr: "OTOBÜSÜM NEREDE",
+      en: "WHERE IS MY BUS",
+      de: "WO IST MEIN BUS",
+    },
+    href: {
+      tr: "/otobusum-nerede",
+      en: "/where-is-my-bus",
+      de: "/wo-ist-mein-bus",
+    },
     media: "/assets/boxImages/yaklasanotobus.png",
   },
   {
     id: 2,
-    name: "VAPUR SAATLERİ",
-    href: "izmir-vapur-saatleri",
+    name: {
+      tr: "VAPUR SAATLERİ",
+      en: "FERRY SCHEDULES",
+      de: "FÄHRFAHRPLÄNE",
+    },
+    href: {
+      tr: "/izmir-vapur-saatleri",
+      en: "/izmir-ferry-schedules",
+      de: "/izmir-faehrfahrpläne",
+    },
     media: "/assets/boxImages/vapursaatleri.png",
   },
   {
     id: 3,
-    name: "İZMİRİM KART",
-    href: "izmirim-kart",
+    name: {
+      tr: "İZMİRİM KART",
+      en: "İZMİRİM CARD",
+      de: "İZMİRİM KARTE",
+    },
+    href: {
+      tr: "/izmirim-kart",
+      en: "/izmirim-kart",
+      de: "/izmirim-kart",
+    },
     media: "/assets/boxImages/izmirim-kart.png",
   },
 ];
 
-export const locations_TR = [
+export const locations = [
   {
     id: 0,
-    name: "ÜCRETSİZ Wi-Fi NOKTALARI",
-    href: "ucretsiz-wifi-noktalari",
+    name: {
+      tr: "ÜCRETSİZ Wi-Fi NOKTALARI",
+      en: "FREE Wi-Fi LOCATIONS",
+      de: "KOSTENLOSE Wi-Fi STANDORTE",
+    },
+    href: {
+      tr: "/ucretsiz-wifi-noktalari",
+      en: "/free-wifi-locations",
+      de: "/kostenlose-wifi-standorte",
+    },
     media: "/assets/boxImages/wifi.png",
   },
   {
     id: 1,
-    name: "TUVALET Konumları",
-    href: "tuvalet-konumlari",
+    name: {
+      tr: "TUVALET Konumları",
+      en: "TOILET LOCATIONS",
+      de: "TOILETTEN STANDORTE",
+    },
+    href: {
+      tr: "/tuvalet-konumlari",
+      en: "/toilet-locations",
+      de: "/toiletten-standorte",
+    },
     media: "/assets/boxImages/tuvaletler.png",
   },
   {
     id: 2,
-    name: "HASTANELER",
-    href: "hastaneler",
+    name: {
+      tr: "HASTANELER",
+      en: "HOSPITALS",
+      de: "KRANKENHÄUSER",
+    },
+    href: {
+      tr: "/hastaneler",
+      en: "/hospitals",
+      de: "/krankenhaeuser",
+    },
     media: "/assets/boxImages/hastaneler.png",
   },
   {
     id: 3,
-    name: "MÜZELER",
-    href: "muzeler",
+    name: {
+      tr: "MÜZELER",
+      en: "MUSEUMS",
+      de: "MUSEEN",
+    },
+    href: {
+      tr: "/muzeler",
+      en: "/museums",
+      de: "/museen",
+    },
     media: "/assets/boxImages/muzeler.png",
   },
   {
     id: 4,
-    name: "KONSOLOSLUKLAR",
-    href: "konsolosluklar",
+    name: {
+      tr: "KONSOLOSLUKLAR",
+      en: "CONSULATES",
+      de: "KONSULATE",
+    },
+    href: {
+      tr: "/konsolosluklar",
+      en: "/consulates",
+      de: "/konsulate",
+    },
     media: "/assets/boxImages/konsolosluklar.png",
   },
 ];

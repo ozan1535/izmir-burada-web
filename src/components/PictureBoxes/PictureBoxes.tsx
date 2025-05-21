@@ -1,19 +1,25 @@
 import Image from "next/image";
 import { IPictureBox } from "./PictureBoxes.types";
 
-function PictureBoxes({ items }: { items: IPictureBox[] }) {
+function PictureBoxes({
+  items,
+  locale,
+}: {
+  items: IPictureBox[];
+  locale: string;
+}) {
   return (
     <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {items.map((item) => (
         <li
           className="relative lg:w-[300px] lg:h-[300px] w-[250px] h-[250px] group"
-          key={item.text}
+          key={item.text[locale]}
         >
           <a href={item.href} className="block w-full h-full">
             <div className="relative w-full h-full">
               <Image
                 src={item.imageSource}
-                alt={item.text}
+                alt={item.text[locale]}
                 fill
                 className="object-cover"
               />
@@ -21,16 +27,10 @@ function PictureBoxes({ items }: { items: IPictureBox[] }) {
                 className={`absolute inset-0 ${item.bgColor} group-hover:opacity-80 group-hover:duration-500 bg-opacity-50 z-10`}
               ></div>
 
-              {/* <div className="absolute bottom-0 left-0 z-20 p-4 text-white hidden group-hover:block">
-                <p className="text-sm">{item.secondaryText}</p>
-                <p className="font-bold text-lg">
-                  {item.text.toLocaleUpperCase("tr-TR")}
-                </p>
-              </div> */}
               <div className="absolute bottom-0 left-0 z-20 p-4 text-white block lg:hidden lg:group-hover:block">
-                <p className="text-sm">{item.secondaryText}</p>
+                <p className="text-sm">{item.secondaryText[locale]}</p>
                 <p className="font-bold text-lg">
-                  {item.text.toLocaleUpperCase("tr-TR")}
+                  {item.text[locale].toLocaleUpperCase(locale)}
                 </p>
               </div>
             </div>

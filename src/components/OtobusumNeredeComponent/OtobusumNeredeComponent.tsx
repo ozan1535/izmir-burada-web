@@ -6,9 +6,9 @@ import Table from "@/components/Table/Table";
 import {
   otobusumNeredeKeys,
   otobusumNeredeTableHeaderItems,
-} from "@/app/otobusum-nerede/helpers";
+} from "@/app/[locale]/otobusum-nerede/helpers";
 
-function OtobusumNeredeComponent() {
+function OtobusumNeredeComponent({ title, placeholder }) {
   const [searchValue, setSearchValue] = useState("");
   const [data, setData] = useState([]);
 
@@ -20,10 +20,10 @@ function OtobusumNeredeComponent() {
     setData(items);
   };
   return (
-    <PageTemplate title={"Otobüsüm Nerede"}>
+    <PageTemplate title={title}>
       <div className="h-[60vh]">
         <SearchInput
-          placeholder={"Durak numarasini giriniz"}
+          placeholder={placeholder}
           searchValue={searchValue}
           setSearchValue={setSearchValue}
           onClick={() => fetchData(searchValue)}

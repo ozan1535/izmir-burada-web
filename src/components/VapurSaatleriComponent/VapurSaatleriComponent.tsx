@@ -7,7 +7,15 @@ import RenderFerryTable from "@/components/RenderFerryTable/RenderFerryTable";
 import { IHatData } from "./vapurSaatleriComponent.types";
 import { INameAndId } from "@/utils/types";
 
-function VapurSaatleriComponent() {
+function VapurSaatleriComponent({
+  title,
+  alertEmpty,
+  alertSameInputs,
+  departurePlaceholder,
+  arrivalPlaceholder,
+  dayPlaceholder,
+  searchText,
+}) {
   const [departure, setDeparture] = useState<INameAndId | null>(null);
   const [arrival, setArrival] = useState<INameAndId | null>(null);
   const [day, setDay] = useState<INameAndId | null>(null);
@@ -15,12 +23,12 @@ function VapurSaatleriComponent() {
 
   const fetchItems = async () => {
     if (!departure || !arrival || !day) {
-      alert("Lütfen tüm alanları doldurun.");
+      alert(alertEmpty);
       return;
     }
 
     if (departure.id === arrival.id) {
-      alert("Kalkış ve varış iskeleleri aynı olamaz.");
+      alert(alertSameInputs);
       return;
     }
 
@@ -30,23 +38,23 @@ function VapurSaatleriComponent() {
     setData(data);
   };
   return (
-    <PageTemplate title="İzmir Vapur Saatleri">
+    <PageTemplate title={title}>
       <div className="min-h-[60vh] space-y-4">
         <DropdownWithSearch
           items={ports}
-          placeholder="Kalkış"
+          placeholder={departurePlaceholder}
           selected={departure}
           setSelected={setDeparture}
         />
         <DropdownWithSearch
           items={ports}
-          placeholder="Varış"
+          placeholder={arrivalPlaceholder}
           selected={arrival}
           setSelected={setArrival}
         />
         <DropdownWithSearch
           items={days}
-          placeholder="Gün"
+          placeholder={dayPlaceholder}
           selected={day}
           setSelected={setDay}
         />
@@ -54,7 +62,7 @@ function VapurSaatleriComponent() {
           className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white w-full rounded-lg p-3 text-lg font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300 ease-in-out"
           onClick={fetchItems}
         >
-          Ara
+          {searchText}
         </button>
 
         {<RenderFerryTable data={data} />}

@@ -1,0 +1,146 @@
+{
+  "HomePage": {
+    "firstSection": {
+      "everything": "İzmir Hakkında Her Şey Burada",
+      "websiteInfo": "Turistik yerler, namaz vakitleri, nöbetçi eczaneler, otobüs saatleri ve daha fazlası —",
+      "websiteName": "İZMİR BURADA",
+      "download": "Ücretsiz İndir"
+    },
+    "secondSection": {
+      "slogan": "Hayat İzmir’de akıyor, senin için her şey",
+      "sloganHere": "BURADA!"
+    },
+    "thirdSection": {
+      "together": "BİRLİKTE",
+      "discover": "KEŞFEDİYORUZ",
+      "discoverCity": "ŞEHRİ KEŞFET",
+      "unforgettable": "UNUTULMAZ...",
+      "description": "TARİH VE MİMARİDE UNUTULMAZ BİR YOLCULUĞA ÇIKIN"
+    },
+    "fourthSection": {
+      "discover": "İZMİR'İ KEŞFEDİN"
+    },
+    "fifthSection": {
+      "taste": "İZMİR'DE NE YENİR?"
+    },
+    "footer": {
+      "scrollDown": "Aşağı kaydır"
+    }
+  },
+  "NamazVakitleri": {
+    "title": "İzmir Namaz Vakitleri"
+  },
+  "NobetciEczaneler": { "title": "İzmir Nöbetçi Eczaneler" },
+  "SonDepremler": { "title": "İzmir Son Depremler" },
+  "SuKesintileri": { "title": "İzmir Su Kesintileri" },
+  "OtobusSaatleri": {
+    "title": "İzmir Otobüs Saatleri",
+    "information": "OTOBÜS SAATLERİNİ GÖRMEK İÇİN LÜTFEN BİR OTOBÜS HATTI SEÇİNİZ.",
+    "placeholder": "Hat seçiniz"
+  },
+  "VapurSaatleri": {
+    "title": "İzmir Vapur Saatleri",
+    "alertEmpty": "Lütfen tüm alanları doldurun.",
+    "alertSameInputs": "Kalkış ve varış iskeleleri aynı olamaz.",
+    "departure": "Kalkış",
+    "arrival": "Varış",
+    "day": "Gün",
+    "search": "Ara"
+  },
+  "OtobusumNerede": {
+    "title": "Otobüsüm Nerede",
+    "placeholder": "Durak numarasını giriniz"
+  },
+  "Etkinlikler": {
+    "title": "İzmir Etkinlikler",
+    "details": "Detaylar",
+    "buyTicket": "Bilet Al",
+    "free": "Ücretsiz",
+    "noTicketInfo": "Bilet bilgisi yok"
+  },
+  "tuvaletKonumlari": { "title": "Tuvalet Konumları" },
+  "wifiNoktalari": { "title": "Ücretsiz Wi-Fi Noktaları" },
+  "Discover": { "title": " İZMİR'İ KEŞFET" },
+  "UsefulInformation": {
+    "trends": "TRENDLER",
+    "transportation": "ULAŞIM",
+    "locations": "KONUMLAR"
+  },
+  "Footer": {
+    "pages": "Sayfalar",
+    "prayingTimes": "Namaz vakitleri",
+    "recentEarthquakes": "Son Depremler",
+    "followus": "TAKİP ET",
+    "legal": "Yasal",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfUse": "Kullanım Şartları",
+    "copyright": "Tüm hakları saklıdır."
+  },
+  "Metadata": {
+    "HomePage": {
+      "title": "Anasayfa - İzmir Burada",
+      "description": "İzmir Burada, İzmir’de yaşam ve seyahat için ulaşım, sağlık, etkinlikler ve hizmetler hakkında güncel bilgiler sunan kapsamlı bir rehber.",
+      "tags": "İzmir Burada, İzmir depremler, İzmir namaz vakitleri, İzmir rehberi, İzmir ulaşım, İzmir sağlık, İzmir etkinlikler, İzmir hizmetler, İzmir yaşam, İzmir gezilecek yerler"
+    },
+    "NamazVakitleri": {
+      "title": "Namaz Vakitleri - İzmir Burada",
+      "description": "İzmir için günlük namaz vakitlerini öğrenin. İzmir Burada ile imsakiye bilgilerine, ezan saatlerine ve tüm vakitlere kolayca ulaşabilirsiniz.",
+      "tags": "İzmir namaz vakitleri, İzmir ezan saatleri, İzmir imsakiye, İzmir sabah namazı, İzmir akşam ezanı, İzmir yatsı vakti, İzmir cuma namazı, İzmir Burada namaz saatleri, günlük namaz saatleri İzmir"
+    },
+    "NobetciEczaneler": {
+      "title": "Nöbetçi Eczaneler - İzmir Burada",
+      "description": "İzmir'deki güncel nöbetçi eczane listesine ulaşın. İzmir Burada ile geceleri ve tatil günlerinde açık olan eczaneleri kolayca bulun.",
+      "tags": "İzmir nöbetçi eczaneler, İzmir eczane listesi, İzmir gece açık eczane, İzmir tatil eczaneleri, İzmir acil eczaneler, nöbetçi eczane İzmir, İzmir sağlık hizmetleri, İzmir Burada eczaneler"
+    },
+    "SonDepremler": {
+      "title": "İzmir Son Depremler - İzmir Burada",
+      "description": "İzmir'deki son depremler hakkında anlık bilgilere ulaşın. İzmir Burada ile şehrin deprem geçmişi, son depremler ve afet durumunu takip edin.",
+      "tags": "İzmir son depremler, İzmir deprem durumu, İzmir deprem bilgisi, İzmir Burada son depremler, İzmir deprem verileri, İzmir afet durumu, İzmir deprem raporu, İzmir sismik faaliyet"
+    },
+    "SuKesintileri": {
+      "title": "İzmir Su Kesintileri - İzmir Burada",
+      "description": "İzmir'deki su kesintileri hakkında güncel bilgilere ulaşın. İzmir Burada ile su kesintileri, planlı kesintiler ve su hizmetleri hakkında detaylı bilgiye erişin.",
+      "tags": "İzmir su kesintileri, İzmir su kesintisi durumu, İzmir su kesintisi bilgisi, İzmir Burada su kesintileri, İzmir su hizmetleri, İzmir su kesintisi planı, İzmir altyapı, İzmir su yönetimi"
+    },
+    "OtobusSaatleri": {
+      "title": "Otobüs Saatleri - İzmir Burada",
+      "description": "İzmir'deki otobüs saatlerini kolayca öğrenin. İzmir Burada ile ESHOT hatlarına ait sefer saatlerine ve güzergah bilgilerine hızlıca ulaşabilirsiniz.",
+      "tags": "İzmir otobüs saatleri, İzmir ESHOT saatleri, İzmir otobüs güzergahları, İzmir toplu taşıma, İzmir otobüs durakları, İzmir ulaşım, ESHOT saatleri, İzmir Burada otobüs bilgileri"
+    },
+    "VapurSaatleri": {
+      "title": "İzmir Vapur Saatleri - İzmir Burada",
+      "description": "İzmir'in vapur saatlerini öğrenin. İzmir Burada ile vapur seferlerini takip ederek, şehir içi deniz ulaşımını kolayca planlayın.",
+      "tags": "İzmir vapur saatleri, İzmir vapur seferleri, İzmir deniz ulaşımı, İzmir vapur, İzmir Burada vapur saatleri, vapur tarifesi İzmir, İzmir vapur güzergahları, deniz yolu İzmir"
+    },
+    "OtobusumNerede": {
+      "title": "Otobüsüm Nerede - İzmir Burada",
+      "description": "İzmir'deki otobüslerin konumlarını anında öğrenin. İzmir Burada ile otobüslerinizi takip ederek, zaman kaybı yaşamadan hedefinize kolayca ulaşın.",
+      "tags": "İzmir otobüs konumları, İzmir otobüs, İzmir ulaşım, İzmir Burada otobüs, İzmir otobüs takibi, otobüs konumları İzmir, otobüs nerede, otobüs güzergahları İzmir"
+    },
+    "Etkinlikler": {
+      "title": "Etkinlikler - İzmir Burada",
+      "description": "İzmir'deki etkinlikler hakkında güncel bilgiler. İzmir Burada, konserler, festivaller, sergiler ve diğer kültürel etkinlikler hakkında bilgilendirme sağlar.",
+      "tags": "İzmir etkinlikler, İzmir konserleri, İzmir festivaller, İzmir sergiler, İzmir kültürel etkinlikler, İzmir Burada etkinlikler, İzmir sosyal etkinlikler, İzmir gezilecek yerler, İzmir kültür"
+    },
+    "tuvaletKonumlari": {
+      "title": "Tuvalet Konumları - İzmir Burada",
+      "description": "İzmir’deki tuvalet konumlarına kolay erişim sağlayın. İzmir Burada uygulamasıyla şehirdeki tüm tuvalet noktalarını keşfedin.",
+      "tags": "İzmir tuvalet konumları, İzmir tuvaletleri, İzmir ücretsiz tuvalet, İzmir Burada tuvalet, şehirde tuvalet, tuvalet noktaları İzmir"
+    },
+    "wifiNoktalari": {
+      "title": "Ücretsiz Wifi Noktaları - İzmir Burada",
+      "description": "İzmir’deki ücretsiz wifi noktalarına kolay erişim sağlayın. İzmir Burada uygulamasıyla şehirdeki tüm ücretsiz internet bağlantı noktalarını keşfedin.",
+      "tags": "Ücretsiz wifi, İzmir wifi noktaları, İzmir ücretsiz internet, wifi erişimi, İzmir Burada wifi, İzmir ücretsiz wifi, şehirde wifi, wifi noktaları İzmir"
+    },
+    "Discover": {
+      "title": "Keşfet - İzmir Burada",
+      "description": "İzmir'in güzelliklerini keşfedin! İzmir Burada ile plajlardan tarihi ve kültürel mekanlara, doğa harikalarından etkinliklere kadar şehri adım adım keşfedin.",
+      "tags": "İzmir keşfet, İzmir plajları, İzmir tarihi, İzmir kültür, İzmir doğa, İzmir etkinlikleri, İzmir gezilecek yerler, İzmir tatil, İzmir gezisi, İzmir Burada keşfet"
+    },
+    "UsefulInformation": {
+      "title": "Faydalı Bilgiler - İzmir Burada",
+      "description": "İzmir hakkında faydalı bilgiler. İzmir Burada, şehri keşfederken ihtiyacınız olabilecek pratik bilgiler, tavsiyeler ve ipuçlarını sunar.",
+      "tags": "İzmir faydalı bilgiler, İzmir ipuçları, İzmir tavsiyeler, İzmir pratik bilgiler, İzmir gezilecek yerler, İzmir yemek yerleri, İzmir alışveriş, İzmir ulaşım bilgileri, İzmir kültür, İzmir etkinlikler"
+    }
+  }
+}

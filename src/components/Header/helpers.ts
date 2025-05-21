@@ -1,6 +1,26 @@
-export const navbarItems_TR = [
-  { id: 0, name: "Ana Sayfa", href: "/" },
-  { id: 1, name: "Keşfet", href: "/kesfet" },
-  { id: 2, name: "Faydalı Bilgiler", href: "/faydali-bilgiler" },
-  { id: 3, name: "Blog", href: "/blog" },
+export const navbarItems = [
+  {
+    id: 0,
+    name: { tr: "Ana Sayfa", en: "Home", de: "Startseite" },
+    href: "/",
+  },
+  {
+    id: 1,
+    name: { tr: "Keşfet", en: "Discover", de: "Entdecken" },
+    href: "/kesfet",
+  },
+  {
+    id: 2,
+    name: {
+      tr: "Faydalı Bilgiler",
+      en: "Useful Information",
+      de: "Nützliche Informationen",
+    },
+    href: "/faydali-bilgiler",
+  },
+  {
+    id: 3,
+    name: { tr: "Blog", en: "Blog", de: "Blog" },
+    href: "/blog",
+  },
 ];

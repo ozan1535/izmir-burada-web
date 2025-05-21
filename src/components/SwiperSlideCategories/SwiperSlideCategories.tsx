@@ -37,7 +37,7 @@ function SwiperSlideCategories({
       }}
     >
       {items.map((item) => (
-        <SwiperSlide className="mb-5" key={item.name}>
+        <SwiperSlide className="mb-5" key={item.id}>
           <CategoryBox item={item} />
         </SwiperSlide>
       ))}

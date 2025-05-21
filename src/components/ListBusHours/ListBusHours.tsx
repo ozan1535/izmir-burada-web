@@ -3,7 +3,7 @@ import BusScheduleColumn from "./BusScheduleColumn";
 import {
   FormattedDayData,
   IBusInformation,
-} from "@/app/izmir-otobus-saatleri/otobusSaatleri.types";
+} from "@/app/[locale]/izmir-otobus-saatleri/otobusSaatleri.types";
 
 function ListBusHours({
   singleBusData,

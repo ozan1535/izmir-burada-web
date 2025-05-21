@@ -10,12 +10,12 @@ import {
   busLines,
   fetchItems,
   getFormattedData,
-} from "@/app/izmir-otobus-saatleri/helpers";
+} from "@/app/[locale]/izmir-otobus-saatleri/helpers";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
 import { INameAndId } from "@/utils/types";
-import { IOtobusSaatleri } from "@/app/izmir-otobus-saatleri/otobusSaatleri.types";
+import { IOtobusSaatleri } from "@/app/[locale]/izmir-otobus-saatleri/otobusSaatleri.types";
 
-function SwiperTable() {
+function SwiperTable({ title, information, placeholder }) {
   const [selected, setSelected] = useState<INameAndId | null>(null);
   const [data, setData] = useState<IOtobusSaatleri>({
     busHours: [],
@@ -31,12 +31,12 @@ function SwiperTable() {
 
   const formattedBusData = getFormattedData(busHours);
   return (
-    <PageTemplate title={"Otobüs Saatleri"}>
+    <PageTemplate title={title}>
       <DropdownWithSearch
         items={busLines}
         selected={selected}
         setSelected={setSelected}
-        placeholder={"Hat Seçiniz"}
+        placeholder={placeholder}
       />
       {busHours?.length ? (
         <>
@@ -96,9 +96,7 @@ function SwiperTable() {
               </>
             )
           ) : (
-            <span className="text-blue-600 font-medium">
-              OTOBÜS SAATLERİNİ GÖRMEK İÇİN LÜTFEN BİR OTOBÜS HATTI SEÇİNİZ.
-            </span>
+            <span className="text-blue-600 font-medium">{information} </span>
           )}
         </div>
       )}

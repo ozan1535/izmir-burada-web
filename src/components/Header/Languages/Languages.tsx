@@ -1,11 +1,24 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { languageItems, toggleLanguageDropdown } from "./helpers";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { useParams } from "next/navigation";
+import {
+  getFlagAndText,
+  languageItems,
+  toggleLanguageDropdown,
+} from "./helpers";
 
 function Languages() {
   const [isLanguageOpen, setLanguageOpen] = useState(false);
 
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const params = useParams();
+  const { locale } = params;
+
+  const { flagSrc, text } = getFlagAndText(locale);
   return (
     <>
       <button
@@ -15,13 +28,13 @@ function Languages() {
         className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
       >
         <Image
-          src="/assets/flags/turkey-flag.svg"
+          src={flagSrc}
           width={25}
           height={15}
           alt="flag"
           className="mr-2"
         />
-        TR
+        {text}
       </button>
       <div
         className={`absolute z-50 ${
@@ -31,10 +44,22 @@ function Languages() {
       >
         <ul className="py-2 font-medium" role="none">
           {languageItems.map((item) => (
-            <li key={item.code}>
-              <a
-                href="#"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+            <li
+              key={item.code}
+              onClick={() => {
+                console.log(item);
+                setLanguageOpen(false);
+                router.replace(
+                  // @ts-expect-error -- TypeScript will validate that only known `params`
+                  // are used in combination with a given `pathname`. Since the two will
+                  // always match for the current route, we can skip runtime checks.
+                  { pathname, params },
+                  { locale: item.code.toLowerCase() }
+                );
+              }}
+            >
+              <div
+                className="cursor-pointer block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                 role="menuitem"
               >
                 <div className="inline-flex items-center">
@@ -47,7 +72,7 @@ function Languages() {
                   />
                   {item.code}
                 </div>
-              </a>
+              </div>
             </li>
           ))}
         </ul>

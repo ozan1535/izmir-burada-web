@@ -1,5 +1,5 @@
 import React from "react";
-import { getPortNameById } from "@/app/izmir-vapur-saatleri/helpers";
+import { getPortNameById } from "@/app/[locale]/izmir-vapur-saatleri/helpers";
 import { IHatData } from "../VapurSaatleriComponent/vapurSaatleriComponent.types";
 
 function RenderFerryTable({ data }: { data: IHatData[][] }) {

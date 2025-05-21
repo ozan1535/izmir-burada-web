@@ -1,0 +1,148 @@
+{
+  "HomePage": {
+    "firstSection": {
+      "everything": "Everything About İzmir is Here",
+      "websiteInfo": "Tourist spots, prayer times, pharmacies on duty, bus schedules, and more —",
+      "websiteName": "İZMİR BURADA",
+      "download": "Download for Free"
+    },
+    "secondSection": {
+      "slogan": "Life flows in İzmir, everything is here for you",
+      "sloganHere": "HERE!"
+    },
+    "thirdSection": {
+      "together": "TOGETHER",
+      "discover": "WE ARE DISCOVERING",
+      "discoverCity": "DISCOVER THE CITY",
+      "unforgettable": "UNFORGETTABLE...",
+      "description": "EMBARK ON AN UNFORGETTABLE JOURNEY IN HISTORY AND ARCHITECTURE"
+    },
+    "fourthSection": {
+      "discover": "DISCOVER IZMIR"
+    },
+    "fifthSection": {
+      "taste": "WHAT TO EAT IN IZMIR?"
+    },
+    "footer": {
+      "scrollDown": "Scroll Down"
+    }
+  },
+  "NamazVakitleri": {
+    "title": "İzmir Praying Times"
+  },
+  "NobetciEczaneler": { "title": "On Duty Pharmacies in İzmir" },
+  "SonDepremler": { "title": "Recent Earthquakes in İzmir" },
+  "SuKesintileri": { "title": "Water Outages in İzmir" },
+  "OtobusSaatleri": {
+    "title": "İzmir Bus Schedules",
+    "information": "PLEASE SELECT A BUS LINE TO SEE BUS TIMES.",
+    "placeholder": "Select Line"
+  },
+  "VapurSaatleri": {
+    "title": "İzmir Ferry Schedules",
+    "alertEmpty": "Please fill in all fields.",
+    "alertSameInputs": "Departure and arrival piers cannot be the same.",
+    "departure": "Departure",
+    "arrival": "Arrival",
+    "day": "Day",
+    "search": "Search"
+  },
+  "OtobusumNerede": {
+    "title": "Where is My Bus",
+    "placeholder": "Enter the stop number"
+  },
+  "Etkinlikler": {
+    "title": "İzmir Events",
+    "details": "Details",
+    "buyTicket": "Buy Ticket",
+    "free": "Free",
+    "noTicketInfo": "No ticket information"
+  },
+  "tuvaletKonumlari": { "title": "Toilet Locations" },
+  "wifiNoktalari": { "title": "Free Wi-Fi Locations" },
+  "Discover": {
+    "title": "DISCOVER IZMIR"
+  },
+  "UsefulInformation": {
+    "trends": "TRENDS",
+    "transportation": "TRANSPORTATION",
+    "locations": "LOCATIONS"
+  },
+  "Footer": {
+    "pages": "Pages",
+    "prayingTimes": "Praying Times",
+    "recentEarthquakes": "Recent Earthquakes",
+    "followus": "FOLLOW US",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "copyright": "All rights reserved."
+  },
+  "Metadata": {
+    "HomePage": {
+      "title": "Home - İzmir Here",
+      "description": "İzmir Here is a comprehensive guide offering up-to-date information about transportation, health, events, and services for living and traveling in İzmir.",
+      "tags": "İzmir Here, İzmir earthquakes, İzmir prayer times, İzmir guide, İzmir transportation, İzmir health, İzmir events, İzmir services, İzmir life, places to visit in İzmir"
+    },
+    "NamazVakitleri": {
+      "title": "Prayer Times - İzmir Burada",
+      "description": "Learn the daily prayer times for İzmir. With İzmir Burada, you can easily access the imsak schedule, azan times, and all prayer times.",
+      "tags": "İzmir prayer times, İzmir azan times, İzmir imsak, İzmir fajr prayer, İzmir maghrib prayer, İzmir isha prayer, İzmir friday prayer, İzmir Burada prayer times, daily prayer times İzmir"
+    },
+    "NobetciEczaneler": {
+      "title": "Pharmacy On Duty - İzmir Burada",
+      "description": "Access the current list of pharmacies on duty in İzmir. With İzmir Burada, you can easily find pharmacies that are open at night and on holidays.",
+      "tags": "İzmir pharmacies on duty, İzmir pharmacy list, İzmir night pharmacies, İzmir holiday pharmacies, İzmir emergency pharmacies, pharmacy on duty İzmir, İzmir healthcare services, İzmir Burada pharmacies"
+    },
+    "SonDepremler": {
+      "title": "Recent Earthquakes in İzmir - İzmir Burada",
+      "description": "Get real-time information about recent earthquakes in İzmir. With İzmir Burada, you can track the city's earthquake history, recent earthquakes, and disaster status.",
+      "tags": "İzmir recent earthquakes, İzmir earthquake status, İzmir earthquake information, İzmir Burada recent earthquakes, İzmir earthquake data, İzmir disaster status, İzmir earthquake report, İzmir seismic activity"
+    },
+    "SuKesintileri": {
+      "title": "Water Outages in İzmir - İzmir Burada",
+      "description": "Access up-to-date information about water outages in İzmir. With İzmir Burada, get detailed information about water outages, planned interruptions, and water services.",
+      "tags": "İzmir water outages, İzmir water outage status, İzmir water outage information, İzmir Burada water outages, İzmir water services, İzmir water outage plan, İzmir infrastructure, İzmir water management"
+    },
+    "OtobusSaatleri": {
+      "title": "Bus Schedules - İzmir Burada",
+      "description": "Easily learn the bus schedules in İzmir. With İzmir Burada, you can quickly access the ESHOT bus lines' departure times and route information.",
+      "tags": "İzmir bus schedules, İzmir ESHOT schedules, İzmir bus routes, İzmir public transport, İzmir bus stops, İzmir transportation, ESHOT schedules, İzmir Burada bus information"
+    },
+    "VapurSaatleri": {
+      "title": "Ferry Schedules - İzmir Burada",
+      "description": "Learn the ferry schedules in İzmir. With İzmir Burada, track ferry departures and easily plan your city’s sea transportation.",
+      "tags": "İzmir ferry schedules, İzmir ferry departures, İzmir sea transport, İzmir ferry, İzmir Burada ferry schedules, ferry timetable İzmir, İzmir ferry routes, sea transport İzmir"
+    },
+    "OtobusumNerede": {
+      "title": "Where is My Bus - İzmir Burada",
+      "description": "Instantly learn the locations of buses in İzmir. With İzmir Burada, track your buses and easily reach your destination without wasting time.",
+      "tags": "İzmir bus locations, İzmir buses, İzmir transportation, İzmir Burada bus, İzmir bus tracking, bus locations İzmir, where is the bus, İzmir bus routes"
+    },
+    "Etkinlikler": {
+      "title": "Events - İzmir Burada",
+      "description": "Up-to-date information about events in İzmir. İzmir Burada provides information on concerts, festivals, exhibitions, and other cultural events.",
+      "tags": "İzmir events, İzmir concerts, İzmir festivals, İzmir exhibitions, İzmir cultural events, İzmir Burada events, İzmir social events, İzmir places to visit, İzmir culture"
+    },
+    "tuvaletKonumlari": {
+      "title": "Toilet Locations - İzmir Burada",
+      "description": "Easily access the toilet locations in İzmir. Discover all the toilet spots in the city with the İzmir Burada app.",
+      "tags": "İzmir toilet locations, İzmir toilets, İzmir free toilets, İzmir Burada toilets, toilets in the city, toilet spots İzmir"
+    },
+    "wifiNoktalari": {
+      "title": "Free Wifi Locations - İzmir Burada",
+      "description": "Easily access free wifi locations in İzmir. Discover all the free internet connection points in the city with the İzmir Burada app.",
+      "tags": "Free wifi, İzmir wifi locations, İzmir free internet, wifi access, İzmir Burada wifi, İzmir free wifi, wifi in the city, wifi points İzmir"
+    },
+    "Discover": {
+      "title": "Discover - İzmir Burada",
+      "description": "Discover the beauties of İzmir! With İzmir Burada, explore the city step by step from beaches and historical and cultural sites to natural wonders and events.",
+      "tags": "Discover İzmir, İzmir beaches, İzmir history, İzmir culture, İzmir nature, İzmir events, İzmir tourist attractions, İzmir vacation, İzmir trip, Discover İzmir Burada"
+    },
+    "UsefulInformation": {
+      "title": "Useful Information - İzmir Burada",
+      "description": "Useful information about İzmir. İzmir Burada provides practical tips, recommendations, and advice you might need while exploring the city.",
+      "tags": "Useful information İzmir, İzmir tips, İzmir recommendations, İzmir practical information, İzmir tourist attractions, İzmir restaurants, İzmir shopping, İzmir transportation info, İzmir culture, İzmir events"
+    }
+  }
+}

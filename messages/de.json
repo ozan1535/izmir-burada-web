@@ -1,0 +1,148 @@
+{
+  "HomePage": {
+    "firstSection": {
+      "everything": "Alles über Izmir ist hier",
+      "websiteInfo": "Touristische Sehenswürdigkeiten, Gebetszeiten, Apotheken im Dienst, Busfahrpläne und mehr —",
+      "websiteName": "İZMİR BURADA",
+      "download": "Kostenlos herunterladen"
+    },
+    "secondSection": {
+      "slogan": "Das Leben fließt in Izmir, alles ist hier für dich",
+      "sloganHere": "HIER!"
+    },
+    "thirdSection": {
+      "together": "ZUSAMMEN",
+      "discover": "WIR ENTDECKEN",
+      "discoverCity": "ENTDECKE DIE STADT",
+      "unforgettable": "UNVERGESSLICH...",
+      "description": "BEGINNE EINE UNVERGESSLICHE REISE IN GESCHICHTE UND ARCHITEKTUR"
+    },
+    "fourthSection": {
+      "discover": "ENTDECKE IZMIR"
+    },
+    "fifthSection": {
+      "taste": "WAS KANN MAN IN IZMIR ESSEN?"
+    },
+    "footer": {
+      "scrollDown": "Nach unten scrollen"
+    }
+  },
+  "NamazVakitleri": {
+    "title": "İzmir Gebetszeiten"
+  },
+  "NobetciEczaneler": { "title": "Apotheke im Dienst in İzmir" },
+  "SonDepremler": { "title": "Letzte Erdbeben in İzmir" },
+  "SuKesintileri": { "title": "Wasserunterbrechungen in İzmir" },
+  "OtobusSaatleri": {
+    "title": "İzmir Busfahrpläne",
+    "information": "BITTE WÄHLEN SIE EINE BUSLINIE AUS, UM DIE BUSZEITEN ANZUZEIGEN.",
+    "placeholder": "Zeile auswählen"
+  },
+  "VapurSaatleri": {
+    "title": "İzmir Fährfahrpläne",
+    "alertEmpty": "Bitte füllen Sie alle Felder aus.",
+    "alertSameInputs": "Abfahrt- und Anlegestellen können nicht gleich sein.",
+    "departure": "Abfahrt",
+    "arrival": "Ankunft",
+    "day": "Tag",
+    "search": "Suchen"
+  },
+  "OtobusumNerede": {
+    "title": "Wo ist mein Bus",
+    "placeholder": "Geben Sie die Haltestellennummer ein"
+  },
+  "Etkinlikler": {
+    "title": "İzmir Veranstaltungen",
+    "details": "Details",
+    "buyTicket": "Ticket kaufen",
+    "free": "Kostenlos",
+    "noTicketInfo": "Keine Ticketinformationen"
+  },
+  "tuvaletKonumlari": { "title": "Toilettenstandorte" },
+  "wifiNoktalari": { "title": "Kostenlose Wi-Fi-Standorte" },
+  "Discover": {
+    "title": "ENTDECKE IZMIR"
+  },
+  "UsefulInformation": {
+    "trends": "TRENDEN",
+    "transportation": "VERKEHR",
+    "locations": "STANDORTE"
+  },
+  "Footer": {
+    "pages": "Seiten",
+    "prayingTimes": "Gebetszeiten",
+    "recentEarthquakes": "Aktuelle Erdbeben",
+    "followus": "FOLGE UNS",
+    "legal": "Rechtliches",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfUse": "Nutzungsbedingungen",
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "Metadata": {
+    "HomePage": {
+      "title": "Startseite - İzmir Hier",
+      "description": "İzmir Hier ist ein umfassender Führer, der aktuelle Informationen über Verkehr, Gesundheit, Veranstaltungen und Dienstleistungen für das Leben und Reisen in Izmir bietet.",
+      "tags": "İzmir Hier, Izmirs Erdbeben, Izmir Gebetszeiten, Izmir Reiseführer, Izmir Verkehr, Izmir Gesundheit, Izmir Veranstaltungen, Izmir Dienstleistungen, Izmir Leben, Sehenswürdigkeiten in Izmir"
+    },
+    "NamazVakitleri": {
+      "title": "Gebetszeiten - İzmir Burada",
+      "description": "Erfahren Sie die täglichen Gebetszeiten für İzmir. Mit İzmir Burada können Sie ganz einfach den Imsak-Zeitplan, die Azan-Zeiten und alle Gebetszeiten einsehen.",
+      "tags": "İzmir Gebetszeiten, İzmir Azan-Zeiten, İzmir Imsak, İzmir Fajr-Gebet, İzmir Maghrib-Gebet, İzmir Isha-Gebet, İzmir Freitag-Gebet, İzmir Burada Gebetszeiten, tägliche Gebetszeiten İzmir"
+    },
+    "NobetciEczaneler": {
+      "title": "Apotheken im Dienst - İzmir Burada",
+      "description": "Erhalten Sie die aktuelle Liste der Apotheken im Dienst in İzmir. Mit İzmir Burada können Sie Apotheken finden, die nachts und an Feiertagen geöffnet sind.",
+      "tags": "İzmir Apotheken im Dienst, İzmir Apothekenliste, İzmir Nachtapotheken, İzmir Feiertagsapotheken, İzmir Notfallapotheken, Apotheke im Dienst İzmir, İzmir Gesundheitsdienste, İzmir Burada Apotheken"
+    },
+    "SonDepremler": {
+      "title": "Kürzliche Erdbeben in İzmir - İzmir Burada",
+      "description": "Erhalten Sie aktuelle Informationen zu den letzten Erdbeben in İzmir. Mit İzmir Burada können Sie die Erdbebengeschichte der Stadt, die letzten Erdbeben und den Katastrophenstatus verfolgen.",
+      "tags": "İzmir kürzliche Erdbeben, İzmir Erdbebenstatus, İzmir Erdbebeninformationen, İzmir Burada kürzliche Erdbeben, İzmir Erdbebendaten, İzmir Katastrophenstatus, İzmir Erdbebenbericht, İzmir seismische Aktivität"
+    },
+    "SuKesintileri": {
+      "title": "Wasserunterbrechungen in İzmir - İzmir Burada",
+      "description": "Erhalten Sie aktuelle Informationen zu Wasserunterbrechungen in İzmir. Mit İzmir Burada erhalten Sie detaillierte Informationen zu Wasserunterbrechungen, geplanten Unterbrechungen und Wasserdiensten.",
+      "tags": "İzmir Wasserunterbrechungen, İzmir Wasserunterbrechungsstatus, İzmir Wasserunterbrechungsinformationen, İzmir Burada Wasserunterbrechungen, İzmir Wasserdienste, İzmir Wasserunterbrechungsplan, İzmir Infrastruktur, İzmir Wasserbewirtschaftung"
+    },
+    "OtobusSaatleri": {
+      "title": "Busfahrpläne - İzmir Burada",
+      "description": "Erfahren Sie einfach die Busfahrpläne in İzmir. Mit İzmir Burada können Sie schnell die Abfahrtszeiten der ESHOT-Buslinien und die Routeninformationen einsehen.",
+      "tags": "İzmir Busfahrpläne, İzmir ESHOT Fahrpläne, İzmir Busrouten, İzmir öffentlicher Verkehr, İzmir Bushaltestellen, İzmir Transport, ESHOT Fahrpläne, İzmir Burada Businformationen"
+    },
+    "VapurSaatleri": {
+      "title": "Fährfahrpläne - İzmir Burada",
+      "description": "Erfahren Sie die Fährfahrpläne in İzmir. Mit İzmir Burada können Sie Fährabfahrten verfolgen und Ihre städtische Schiffsverbindung einfach planen.",
+      "tags": "İzmir Fährfahrpläne, İzmir Fährabfahrten, İzmir Seeverkehr, İzmir Fähre, İzmir Burada Fährfahrpläne, Fährfahrplan İzmir, İzmir Fährrouten, Seeverkehr İzmir"
+    },
+    "OtobusumNerede": {
+      "title": "Wo ist mein Bus - İzmir Burada",
+      "description": "Erfahren Sie sofort die Positionen der Busse in İzmir. Mit İzmir Burada können Sie Ihre Busse verfolgen und Ihr Ziel ohne Zeitverlust einfach erreichen.",
+      "tags": "İzmir Buspositionen, İzmir Busse, İzmir Verkehr, İzmir Burada Bus, İzmir Busverfolgung, Buspositionen İzmir, wo ist der Bus, İzmir Busrouten"
+    },
+    "Etkinlikler": {
+      "title": "Veranstaltungen - İzmir Burada",
+      "description": "Aktuelle Informationen über Veranstaltungen in İzmir. İzmir Burada bietet Informationen zu Konzerten, Festivals, Ausstellungen und anderen kulturellen Veranstaltungen.",
+      "tags": "İzmir Veranstaltungen, İzmir Konzerte, İzmir Festivals, İzmir Ausstellungen, İzmir kulturelle Veranstaltungen, İzmir Burada Veranstaltungen, İzmir soziale Veranstaltungen, İzmir Sehenswürdigkeiten, İzmir Kultur"
+    },
+    "tuvaletKonumlari": {
+      "title": "Toilettenstandorte - İzmir Burada",
+      "description": "Greifen Sie einfach auf die Toilettenstandorte in İzmir zu. Entdecken Sie alle Toilettenpunkte in der Stadt mit der İzmir Burada App.",
+      "tags": "İzmir Toilettenstandorte, İzmir Toiletten, İzmir kostenlose Toiletten, İzmir Burada Toiletten, Toiletten in der Stadt, Toilettenpunkte İzmir"
+    },
+    "wifiNoktalari": {
+      "title": "Kostenlose Wifi-Standorte - İzmir Burada",
+      "description": "Greifen Sie einfach auf kostenlose Wifi-Standorte in İzmir zu. Entdecken Sie alle kostenlosen Internetzugangspunkte in der Stadt mit der İzmir Burada App.",
+      "tags": "Kostenloses wifi, İzmir wifi Standorte, İzmir kostenloses Internet, wifi Zugang, İzmir Burada wifi, İzmir kostenloses wifi, wifi in der Stadt, wifi Punkte İzmir"
+    },
+    "Discover": {
+      "title": "Entdecken - İzmir Burada",
+      "description": "Entdecken Sie die Schönheiten von İzmir! Mit İzmir Burada entdecken Sie die Stadt Schritt für Schritt, von Stränden und historischen sowie kulturellen Stätten bis hin zu Naturwundern und Veranstaltungen.",
+      "tags": "İzmir entdecken, İzmir Strände, İzmir Geschichte, İzmir Kultur, İzmir Natur, İzmir Veranstaltungen, İzmir Sehenswürdigkeiten, İzmir Urlaub, İzmir Reise, İzmir Burada entdecken"
+    },
+    "UsefulInformation": {
+      "title": "Nützliche Informationen - İzmir Burada",
+      "description": "Nützliche Informationen über İzmir. İzmir Burada bietet praktische Tipps, Empfehlungen und Ratschläge, die Sie beim Erkunden der Stadt benötigen könnten.",
+      "tags": "Nützliche Informationen İzmir, İzmir Tipps, İzmir Empfehlungen, İzmir praktische Informationen, İzmir Sehenswürdigkeiten, İzmir Restaurants, İzmir Einkaufen, İzmir Verkehrsinformationen, İzmir Kultur, İzmir Veranstaltungen"
+    }
+  }
+}

@@ -30,7 +30,7 @@ export function Header() {
           </span>
         </Link>
         <div className="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-          {/* <Languages /> */}
+          <Languages />
 
           <button
             onClick={toggleNavbar}
