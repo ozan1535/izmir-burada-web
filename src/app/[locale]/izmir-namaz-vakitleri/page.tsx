@@ -18,8 +18,6 @@ import PageTemplate from "@/components/PageTemplate/PageTemplate";
 import { INamazVakitleri } from "./namazVakitleri.types";
 import { getTranslations } from "next-intl/server";
 
-export const revalidate = 1;
-
 export async function generateMetadata() {
   const t = await getTranslations("Metadata");
 

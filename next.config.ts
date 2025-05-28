@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
         protocol: "https", // Ensure to specify the protocol (http or https)
         hostname: "kultursanat.izmir.bel.tr",
       },
+      {
+        protocol: "https", // Ensure to specify the protocol (http or https)
+        hostname: "pppfcbzfmfujxhtjiggr.supabase.co",
+      },
     ],
   },
   typescript: {
