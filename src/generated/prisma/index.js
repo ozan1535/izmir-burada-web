@@ -161,6 +161,10 @@ const config = {
         "fromEnvVar": null,
         "value": "darwin-arm64",
         "native": true
+      },
+      {
+        "fromEnvVar": null,
+        "value": "rhel-openssl-3.0.x"
       }
     ],
     "previewFeatures": [],
@@ -187,8 +191,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"../src/generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel BlogCategory {\n  id         Int      @id @default(autoincrement())\n  createdAt  DateTime @default(now())\n  name       Json\n  slug       Json\n  isBlogPage Boolean  @default(true)\n  media      String\n  blogs      Blog[]\n}\n\nmodel Blog {\n  id          Int            @id @default(autoincrement())\n  createdAt   DateTime       @default(now())\n  updatedAt   DateTime       @updatedAt\n  title       Json\n  slug        Json\n  isBlogPage  Boolean        @default(true)\n  media       String\n  content     Json\n  description Json\n  categories  BlogCategory[]\n}\n",
-  "inlineSchemaHash": "1d48c442bbeaaa581f41e5df32679f7a58f4ace2832abc6f722d0952786bc6db",
+  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider      = \"prisma-client-js\"\n  output        = \"../src/generated/prisma\"\n  binaryTargets = [\"native\", \"rhel-openssl-3.0.x\"]\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel BlogCategory {\n  id         Int      @id @default(autoincrement())\n  createdAt  DateTime @default(now())\n  name       Json\n  slug       Json\n  isBlogPage Boolean  @default(true)\n  media      String\n  blogs      Blog[]\n}\n\nmodel Blog {\n  id          Int            @id @default(autoincrement())\n  createdAt   DateTime       @default(now())\n  updatedAt   DateTime       @updatedAt\n  title       Json\n  slug        Json\n  isBlogPage  Boolean        @default(true)\n  media       String\n  content     Json\n  description Json\n  categories  BlogCategory[]\n}\n",
+  "inlineSchemaHash": "59001a114009cda21551a649396b396a2960917ec3c408ea91d27513b7a61eae",
   "copyEngine": true
 }
 
@@ -229,6 +233,10 @@ Object.assign(exports, Prisma)
 // file annotations for bundling tools to include these files
 path.join(__dirname, "libquery_engine-darwin-arm64.dylib.node");
 path.join(process.cwd(), "src/generated/prisma/libquery_engine-darwin-arm64.dylib.node")
+
+// file annotations for bundling tools to include these files
+path.join(__dirname, "libquery_engine-rhel-openssl-3.0.x.so.node");
+path.join(process.cwd(), "src/generated/prisma/libquery_engine-rhel-openssl-3.0.x.so.node")
 // file annotations for bundling tools to include these files
 path.join(__dirname, "schema.prisma");
 path.join(process.cwd(), "src/generated/prisma/schema.prisma")
