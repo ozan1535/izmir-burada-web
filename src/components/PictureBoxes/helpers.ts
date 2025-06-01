@@ -11,7 +11,11 @@ export const homePageUnforgettablePlaces = [
       de: "Symbol der Stadt",
     },
     imageSource: "/assets/blogImages/izmir-saat-kulesi/izmir-saat-kulesi.jpg",
-    href: "/blog/izmir-saat-kulesi",
+    href: {
+      tr: "/blog/izmir-saat-kulesi",
+      en: "/blog/izmir-clock-tower",
+      de: "/blog/izmir-uhrturm",
+    },
     bgColor: "group-hover:bg-green-500",
   },
   {
@@ -26,7 +30,11 @@ export const homePageUnforgettablePlaces = [
       de: "Fahrt in die Höhe",
     },
     imageSource: "/assets/blogImages/izmir-tarihi-asansor/tarihi-asansor.jpg",
-    href: "/blog/izmir-tarihi-asansor",
+    href: {
+      tr: "/blog/izmir-tarihi-asansor",
+      en: "/blog/izmir-historical-elevator",
+      de: "/blog/izmir-historischer-aufzug",
+    },
     bgColor: "group-hover:bg-yellow-500",
   },
   {
@@ -41,7 +49,11 @@ export const homePageUnforgettablePlaces = [
       de: "Auf den Spuren der Geschichte",
     },
     imageSource: "/assets/blogImages/efes-antik-kenti/efes-tiyatro.jpg",
-    href: "/blog/efes-antik-kenti-ve-tarihi-yapilari",
+    href: {
+      tr: "/blog/efes-antik-kenti",
+      en: "/blog/ephesus-ancient-city",
+      de: "/blog/antike-stadt-ephesos",
+    },
     bgColor: "group-hover:bg-pink-500",
   },
   {
@@ -56,7 +68,11 @@ export const homePageUnforgettablePlaces = [
       de: "Antikes Zentrum",
     },
     imageSource: "/assets/blogImages/izmir-agorasi/izmir-agora.jpg",
-    href: "/blog/izmir-agorasi",
+    href: {
+      tr: "/blog/izmir-agora",
+      en: "/blog/izmir-agora",
+      de: "/blog/izmir-agora",
+    },
     bgColor: "group-hover:bg-green-500",
   },
   {
@@ -71,7 +87,11 @@ export const homePageUnforgettablePlaces = [
       de: "Historischer Markt",
     },
     imageSource: "/assets/blogImages/kemeralti-carsisi/izmir-kemeralti.jpg",
-    href: "/blog/kemeralti-carsisi",
+    href: {
+      tr: "/blog/izmir-kemeralti-carsisi",
+      en: "/blog/izmir-kemeralti-bazaar",
+      de: "/blog/izmir-kemeralti-basar",
+    },
     bgColor: "group-hover:bg-pink-500",
   },
   {
@@ -86,7 +106,11 @@ export const homePageUnforgettablePlaces = [
       de: "Burg auf dem Hügel",
     },
     imageSource: "/assets/blogImages/kadifekale/kadifekale3.webp",
-    href: "/blog/kadifekale",
+    href: {
+      tr: "/blog/izmir-kadifekale",
+      en: "/blog/izmir-kadifekale",
+      de: "/blog/izmir-kadifekale",
+    },
     bgColor: "group-hover:bg-orange-500",
   },
   {
@@ -101,7 +125,11 @@ export const homePageUnforgettablePlaces = [
       de: "Die Ruhe der Stadt",
     },
     imageSource: "/assets/blogImages/sirince-koyu/sirince-izmir.jpg",
-    href: "/blog/sirince-koyu",
+    href: {
+      tr: "/blog/sirince-koyu",
+      en: "/blog/sirince-village",
+      de: "/blog/dorf-sirince",
+    },
     bgColor: "group-hover:bg-blue-500",
   },
   {
@@ -117,7 +145,11 @@ export const homePageUnforgettablePlaces = [
     },
     imageSource:
       "/assets/blogImages/pergamon-antik-kenti/bergama-antik-kenti.webp",
-    href: "/blog/pergamon-antik-kenti",
+    href: {
+      tr: "/blog/pergamon-antik-kenti",
+      en: "/blog/ancient-city-of-pergamon",
+      de: "/blog/antike-stadt-pergamon",
+    },
     bgColor: "group-hover:bg-red-500",
   },
 ];
@@ -136,7 +168,11 @@ export const homePageDiscoverIzmir = [
     },
     imageSource:
       "/assets/blogImages/dikilinin-en-guzel-koylari/hayitli-koyu.jpg",
-    href: "/blog/dikilinin-en-guzel-koylari",
+    href: {
+      tr: "/blog/dikilinin-en-guzel-koylari",
+      en: "/blog/the-most-beautiful-bays-of-dikili",
+      de: "/blog/die-schonsten-buchten-von-dikili",
+    },
     bgColor: "group-hover:bg-green-600",
   },
   {
@@ -152,7 +188,11 @@ export const homePageDiscoverIzmir = [
     },
     imageSource:
       "/assets/blogImages/izmir-arkeoloji-muzesi/izmir-arkeoloji-muzesi.webp",
-    href: "/blog/izmir-arkeoloji-muzesi",
+    href: {
+      tr: "/blog/izmir-arkeoloji-muzesi",
+      en: "/blog/izmir-archaeology-museum",
+      de: "/blog/izmir-archaologisches-museum",
+    },
     bgColor: "group-hover:bg-orange-600",
   },
   {
@@ -168,7 +208,11 @@ export const homePageDiscoverIzmir = [
     },
     imageSource:
       "/assets/blogImages/inciralti-kent-ormani/inciralti-kent-ormani.webp",
-    href: "/blog/inciralti-kent-ormani",
+    href: {
+      tr: "/blog/inciralti-kent-ormani",
+      en: "/blog/inciralti-urban-forest",
+      de: "/blog/inciralti-stadtwald",
+    },
     bgColor: "group-hover:bg-blue-600",
   },
   {
@@ -183,7 +227,11 @@ export const homePageDiscoverIzmir = [
       de: "Eine der schönsten Buchten der Türkei",
     },
     imageSource: "/assets/blogImages/cesme-ilica-plaji/cesme-ilica-plaji.jpg",
-    href: "/blog/cesme-ilica-plaji",
+    href: {
+      tr: "/blog/cesme-plajlari-ve-koylari",
+      en: "/blog/cesme-beaches-and-bays",
+      de: "/blog/strande-und-buchten-von-cesme",
+    },
     bgColor: "group-hover:bg-teal-500",
   },
 ];
@@ -202,7 +250,11 @@ export const homePageTastes = [
     },
     imageSource:
       "/assets/blogImages/izmirin-lezzetli-otlari/izmirin-lezzetli-otlari2.jpg",
-    href: "/blog/izmirin-lezzetli-otlari",
+    href: {
+      tr: "/blog/izmirin-lezzetli-otlari",
+      en: "/blog/delicious-herbs-of-izmir",
+      de: "/blog/die-koestlichen-kraeuter-von-izmir",
+    },
     bgColor: "group-hover:bg-green-600",
   },
   {
@@ -218,7 +270,11 @@ export const homePageTastes = [
     },
     imageSource:
       "/assets/blogImages/izmirde-adi-baska-olan-yiyecekler/gevrek.jpg",
-    href: "/blog/izmirde-adi-baska-olan-yiyecekler",
+    href: {
+      tr: "/blog/izmirde-adi-baska-olan-yiyecekler",
+      en: "/blog/foods-with-different-names-in-izmir",
+      de: "/blog/lebensmittel-mit-anderen-namen-in-izmir",
+    },
     bgColor: "group-hover:bg-orange-600",
   },
   {
@@ -233,7 +289,11 @@ export const homePageTastes = [
       de: "König des Frühstücks",
     },
     imageSource: "/assets/blogImages/boyoz/boyoz.webp",
-    href: "/blog/boyoz",
+    href: {
+      tr: "/blog/boyoz",
+      en: "/blog/boyoz",
+      de: "/blog/boyoz",
+    },
     bgColor: "group-hover:bg-blue-600",
   },
   {
@@ -248,7 +308,11 @@ export const homePageTastes = [
       de: "Süße Explosion",
     },
     imageSource: "/assets/blogImages/izmir-bombasi/izmir-bombasi.jpg",
-    href: "/blog/izmir-bombasi",
+    href: {
+      tr: "/blog/izmir-bombasi",
+      en: "/blog/izmir-bomb",
+      de: "/blog/izmir-bombe",
+    },
     bgColor: "group-hover:bg-teal-500",
   },
 ];

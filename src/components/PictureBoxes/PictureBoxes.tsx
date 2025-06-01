@@ -15,7 +15,10 @@ function PictureBoxes({
           className="relative lg:w-[300px] lg:h-[300px] w-[250px] h-[250px] group"
           key={item.text[locale]}
         >
-          <a href={item.href} className="block w-full h-full">
+          <a
+            href={`${locale}${item.href[locale]}`}
+            className="block w-full h-full"
+          >
             <div className="relative w-full h-full">
               <Image
                 src={item.imageSource}
