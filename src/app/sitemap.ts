@@ -34,7 +34,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   blogItems.forEach((blog) => {
     // For each blog, generate a URL for each locale
     Object.keys(blog.slug).forEach((locale) => {
-      const blogUrl = `https://izmir-burada.com/${locale}/blogs/${blog.slug[locale]}`;
+      const blogUrl = `https://izmir-burada.com/${locale}/blog/${blog.slug[locale]}`;
 
       sitemapData.push({
         url: blogUrl, // Full URL for the blog post in the given locale
@@ -42,9 +42,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: "weekly", // Adjust frequency for blog posts
         priority: 1, // Adjust priority if needed
         alternates: {
-          tr: `https://izmir-burada.com/tr/blogs/${blog.slug.tr}`,
-          en: `https://izmir-burada.com/en/blogs/${blog.slug.en}`,
-          de: `https://izmir-burada.com/de/blogs/${blog.slug.de}`,
+          tr: `https://izmir-burada.com/tr/blog/${blog.slug.tr}`,
+          en: `https://izmir-burada.com/en/blog/${blog.slug.en}`,
+          de: `https://izmir-burada.com/de/blog/${blog.slug.de}`,
         },
       });
     });
