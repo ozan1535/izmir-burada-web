@@ -77,5 +77,10 @@ export const routing = defineRouting({
       en: "/terms-of-use",
       de: "/nutzungsbedingungen",
     },
+    "/iletisim": {
+      tr: "/iletisim",
+      en: "/kontakt",
+      de: "/contact",
+    },
   },
 });

@@ -23,4 +23,9 @@ export const navbarItems = [
     name: { tr: "Blog", en: "Blog", de: "Blog" },
     href: "/blog",
   },
+  {
+    id: 4,
+    name: { tr: "İletişim", en: "Contact", de: "Kontakt" },
+    href: "/iletisim",
+  },
 ];

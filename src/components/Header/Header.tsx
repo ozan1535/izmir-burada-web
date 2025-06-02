@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Languages from "./Languages/Languages";
-import { navbarItems_TR } from "./helpers";
 import NavbarItems from "./NavbarItems/NavbarItems";
 import Link from "next/link";
 
