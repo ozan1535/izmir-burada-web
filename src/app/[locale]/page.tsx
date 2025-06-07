@@ -103,7 +103,7 @@ export default async function Home({
             {homePageImportantLinks.map((item, idx) => (
               <div className="my-2" key={idx}>
                 <Link
-                  href={item.link[locale]}
+                  href={`/${locale}/${item.link[locale]}`}
                   className="inline-block w-64 text-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition duration-300"
                 >
                   {item.name[locale]}
@@ -143,7 +143,7 @@ export default async function Home({
           </p>
 
           <Link
-            href="/kesfet"
+            href={`${locale}/kesfet`}
             className="inline-block bg-gradient-to-r from-indigo-400 to-cyan-400 px-6 py-3 text-lg font-semibold text-white mt-9 shadow-md transition-all duration-300 ease-in-out transform hover:scale-102 hover:shadow-lg hover:from-indigo-500 hover:to-cyan-500"
           >
             {t("thirdSection.discoverCity")}

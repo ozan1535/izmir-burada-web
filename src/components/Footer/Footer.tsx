@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import React from "react";
 
-async function Footer() {
+async function Footer({ locale }) {
   const t = await getTranslations("Footer");
 
   return (
@@ -10,7 +10,7 @@ async function Footer() {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <Link href="/" className="flex items-center mt-2" target="_blank">
+            <Link href={`/${locale}`} className="flex items-center mt-2">
               <img
                 src="/assets/izmir-burada-icon.png"
                 className="h-8 me-3 rounded-full"
@@ -40,14 +40,17 @@ async function Footer() {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <Link
-                    href="/izmir-namaz-vakitleri"
+                    href={`/${locale}/izmir-namaz-vakitleri`}
                     className="hover:underline"
                   >
                     {t("prayingTimes")}
                   </Link>
                 </li>
                 <li>
-                  <Link href="/izmir-son-depremler" className="hover:underline">
+                  <Link
+                    href={`/${locale}/izmir-son-depremler`}
+                    className="hover:underline"
+                  >
                     {t("recentEarthquakes")}
                   </Link>
                 </li>
@@ -84,12 +87,18 @@ async function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <Link href="/gizlilik-politikasi" className="hover:underline">
+                  <Link
+                    href={`/${locale}/gizlilik-politikasi`}
+                    className="hover:underline"
+                  >
                     {t("privacyPolicy")}
                   </Link>
                 </li>
                 <li>
-                  <Link href="/kullanim-sartlari" className="hover:underline">
+                  <Link
+                    href={`/${locale}/kullanim-sartlari`}
+                    className="hover:underline"
+                  >
                     {t("termsOfUse")}
                   </Link>
                 </li>

@@ -12,7 +12,7 @@ function NavbarItems() {
       {navbarItems.map((item) => (
         <li key={item.id}>
           <Link
-            href={item.href}
+            href={`/${locale}${item.href}`}
             className={`block py-2 px-3 text-lg ${
               pathname === item.href ? "text-sky-400" : "text-white"
             } hover:text-sky-400 duration-500 rounded-sm md:bg-transparent md:p-0`}
