@@ -38,9 +38,9 @@ export default async function LocaleLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider>
-          <Header />
+          <Header locale={locale} />
           {children}
-          <Footer />
+          <Footer locale={locale} />
           <GoogleAnalytics gaId="G-7Q525EGEKL" />
         </NextIntlClientProvider>
       </body>

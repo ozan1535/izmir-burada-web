@@ -11,7 +11,7 @@ function CategoryBox({ item }: { item: ICategoryBox }) {
   console.log(locale, "CategoryBox");
   return (
     <div className="relative w-full h-52 my-5 bg-blue-200 rounded p-2 hover:shadow-2xl hover:duration-300">
-      <Link href={item.href[locale] || ""}>
+      <Link href={`/${locale}${item.href[locale]}` || ""}>
         <div className="relative w-full h-full">
           <Image
             src={item.media}

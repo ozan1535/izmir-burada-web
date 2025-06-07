@@ -5,7 +5,7 @@ import { navbarItems_TR } from "./helpers";
 import NavbarItems from "./NavbarItems/NavbarItems";
 import Link from "next/link";
 
-export function Header() {
+export function Header({ locale }) {
   const [isNavbarOpen, setNavbarOpen] = useState(false);
 
   // Toggle navbar
@@ -17,7 +17,7 @@ export function Header() {
     <nav className="w-full fixed top-0 z-50 bg-gray-900 border-b border-b-white">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
-          href="/"
+          href={`/${locale}`}
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
