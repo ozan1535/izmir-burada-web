@@ -3,9 +3,14 @@ import { useEffect, useState } from "react";
 
 // Helper function to create a valid Date object for the prayer time
 function getPrayerDate(prayerTime: string): Date {
+  // const currentDate = new Date();
+  // const [hours, minutes] = prayerTime.split(":").map(Number); // Split and convert time to numbers
+  // currentDate.setHours(hours, minutes, 0, 0); // Set hours and minutes to the prayer time
+  // return currentDate;
+  const normalizedTime = prayerTime.replace(".", ":");
+  const [hours, minutes] = normalizedTime.split(":").map(Number);
   const currentDate = new Date();
-  const [hours, minutes] = prayerTime.split(":").map(Number); // Split and convert time to numbers
-  currentDate.setHours(hours, minutes, 0, 0); // Set hours and minutes to the prayer time
+  currentDate.setHours(hours, minutes || 0, 0, 0);
   return currentDate;
 }
 
