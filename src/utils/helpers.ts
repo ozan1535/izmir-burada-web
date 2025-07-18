@@ -469,10 +469,17 @@ export function getFormattedDate(language: "en" | "tr" | "de"): string {
 }
 
 export function getCurrentDate() {
-  const today = new Date();
-  const day = String(today.getDate()).padStart(2, "0");
-  const month = String(today.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed
-  const year = today.getFullYear();
+  // const today = new Date();
+  // const day = String(today.getDate()).padStart(2, "0");
+  // const month = String(today.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed
+  // const year = today.getFullYear();
+
+  // return `${day}.${month}.${year}`;
+
+  const today = DateTime.now().setZone("Europe/Istanbul");
+  const day = String(today.day).padStart(2, "0");
+  const month = String(today.month).padStart(2, "0");
+  const year = today.year;
 
   return `${day}.${month}.${year}`;
 }
