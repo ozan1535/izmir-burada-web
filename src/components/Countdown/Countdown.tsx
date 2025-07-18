@@ -1,4 +1,4 @@
-"use client";
+/* "use client";
 import { useEffect, useState } from "react";
 
 // Helper function to create a valid Date object for the prayer time
@@ -67,6 +67,57 @@ const Countdown = ({ targetTime }: { targetTime: string }) => {
         {formatWithLeadingZero(timeLeft.minutes)}
         {":"}
         {formatWithLeadingZero(timeLeft.seconds)}
+      </p>
+    </div>
+  );
+};
+
+export default Countdown;
+ */
+
+"use client";
+
+import { useEffect, useState } from "react";
+import { DateTime } from "luxon";
+
+const Countdown = ({ targetTime }: { targetTime: string }) => {
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetTime));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeLeft(calculateTimeLeft(targetTime));
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [targetTime]);
+
+  function calculateTimeLeft(prayerTime: string) {
+    const [h, m] = prayerTime.replace(".", ":").split(":").map(Number);
+
+    const now = DateTime.now().setZone("Europe/Istanbul");
+    const target = now.set({ hour: h, minute: m, second: 0, millisecond: 0 });
+
+    const diff = target.diff(now, ["hours", "minutes", "seconds"]);
+
+    if (diff.as("milliseconds") <= 0) {
+      return { hours: 0, minutes: 0, seconds: 0 };
+    }
+
+    return {
+      hours: diff.hours,
+      minutes: diff.minutes,
+      seconds: Math.floor(diff.seconds),
+    };
+  }
+
+  const format = (num: number) => String(Math.floor(num)).padStart(2, "0");
+
+  return (
+    <div className="text-center">
+      <p className="text-lg font-semibold">Ezana Kalan Süre</p>
+      <p className="text-2xl font-black">
+        {format(timeLeft.hours)}:{format(timeLeft.minutes)}:
+        {format(timeLeft.seconds)}
       </p>
     </div>
   );
