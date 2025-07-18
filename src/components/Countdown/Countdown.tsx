@@ -11,6 +11,7 @@ function getPrayerDate(prayerTime: string): Date {
 
 // Helper function to format numbers with leading zero
 function formatWithLeadingZero(number: number) {
+  console.log(number < 10 ? `0${number}` : number, "formatWithLeadingZero");
   return number < 10 ? `0${number}` : number;
 }
 
@@ -29,7 +30,6 @@ const Countdown = ({ targetTime }: { targetTime: string }) => {
 
   function calculateTimeLeft(targetTime: string) {
     const currentTime = new Date();
-    console.log(currentTime, "hehehehe");
     const targetDate = getPrayerDate(targetTime); // Get a valid Date object
 
     const timeDiff = targetDate.getTime() - currentTime.getTime();
@@ -42,6 +42,7 @@ const Countdown = ({ targetTime }: { targetTime: string }) => {
     const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
+    console.log(currentTime, timeDiff, hours, minutes, seconds, "hehehehe");
     return { hours, minutes, seconds };
   }
 
