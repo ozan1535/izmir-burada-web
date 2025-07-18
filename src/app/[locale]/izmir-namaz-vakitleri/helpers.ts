@@ -116,6 +116,7 @@ export const getNextPrayer = (prayerTimes: IPrayerTimes[]) => {
     prayerDate.setHours(h, m, 0, 0);
 
     if (prayerDate.getTime() > now.getTime()) {
+      console.log(prayer, "getNextPrayer");
       return prayer;
     }
   }
