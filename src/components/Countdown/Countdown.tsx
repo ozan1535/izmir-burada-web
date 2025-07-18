@@ -29,6 +29,7 @@ const Countdown = ({ targetTime }: { targetTime: string }) => {
 
   function calculateTimeLeft(targetTime: string) {
     const currentTime = new Date();
+    console.log(currentTime, "hehehehe");
     const targetDate = getPrayerDate(targetTime); // Get a valid Date object
 
     const timeDiff = targetDate.getTime() - currentTime.getTime();
