@@ -82,21 +82,43 @@ export const getPrayerTimes = (currentDateItems: INamazVakitleri) => {
   ];
 };
 
+// export const getTimeInMinutes = (timeString: string) => {
+//   const [hours, minutes] = timeString.split(":").map(Number);
+//   return hours * 60 + minutes;
+// };
+
 export const getTimeInMinutes = (timeString: string) => {
-  const [hours, minutes] = timeString.split(":").map(Number);
-  return hours * 60 + minutes;
+  // Normalize "20.40" → "20:40"
+  const [h, m] = timeString.replace(".", ":").split(":").map(Number);
+  return h * 60 + m;
 };
 
 export const getCurrentDateItems = (data: INamazVakitleri[]) => {
   return data.find((item) => item.MiladiTarihKisa === getCurrentDate());
 };
 
-export const getNextPrayer = (prayerTimes: IPrayerTimes[]) => {
-  const currentTime = new Date();
-  const currentMinutes = currentTime.getHours() * 60 + currentTime.getMinutes();
+// export const getNextPrayer = (prayerTimes: IPrayerTimes[]) => {
+//   const currentTime = new Date();
+//   const currentMinutes = currentTime.getHours() * 60 + currentTime.getMinutes();
 
-  return prayerTimes.find((prayer) => {
-    const prayerTimeInMinutes = getTimeInMinutes(prayer.time);
-    return prayerTimeInMinutes > currentMinutes;
-  });
+//   return prayerTimes.find((prayer) => {
+//     const prayerTimeInMinutes = getTimeInMinutes(prayer.time);
+//     return prayerTimeInMinutes > currentMinutes;
+//   });
+// };
+
+export const getNextPrayer = (prayerTimes: IPrayerTimes[]) => {
+  const now = new Date();
+
+  for (const prayer of prayerTimes) {
+    const [h, m] = prayer.time.replace(".", ":").split(":").map(Number);
+    const prayerDate = new Date();
+    prayerDate.setHours(h, m, 0, 0);
+
+    if (prayerDate.getTime() > now.getTime()) {
+      return prayer;
+    }
+  }
+
+  return null; // all passed
 };
