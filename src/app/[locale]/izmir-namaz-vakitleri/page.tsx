@@ -40,6 +40,8 @@ async function page() {
   const prayerTimes = currentDateItems ? getPrayerTimes(currentDateItems) : [];
   const nextPrayer = getNextPrayer(prayerTimes);
 
+  console.log(prayerTimes, nextPrayer, "nextprayer");
+
   return (
     <PageTemplate title={t("title")}>
       <div className="w-full bg-blue-500 text-white my-5 p-4 rounded-lg">
