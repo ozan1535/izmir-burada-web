@@ -39,7 +39,14 @@ const Countdown = ({ targetTime }: { targetTime: string }) => {
 
     const timeDiff = targetDate.getTime() - currentTime.getTime();
 
-    console.log(currentTime, timeDiff, targetTime, "hehehehe");
+    console.log(
+      currentTime,
+      timeDiff,
+      targetDate.getTime(),
+      currentTime.getTime(),
+      targetTime,
+      "hehehehe"
+    );
     if (timeDiff <= 0) {
       return { hours: 0, minutes: 0, seconds: 0 };
     }
