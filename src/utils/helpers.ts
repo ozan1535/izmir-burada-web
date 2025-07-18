@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { IOnemliYer } from "./types";
+import { DateTime } from "luxon";
 
 export const categories = [
   {
@@ -376,8 +377,7 @@ export const locations = [
 ];
 
 export function getFormattedDate(language: "en" | "tr" | "de"): string {
-  const currentDate = new Date();
-
+  const currentDate = DateTime.now().setZone("Europe/Istanbul");
   const months: Record<"en" | "tr" | "de", string[]> = {
     en: [
       "January",
@@ -453,10 +453,17 @@ export function getFormattedDate(language: "en" | "tr" | "de"): string {
     ],
   };
 
-  const day = currentDate.getDate();
-  const month = months[language][currentDate.getMonth()];
-  const year = currentDate.getFullYear();
-  const weekday = weekdays[language][currentDate.getDay()];
+  // const day = currentDate.getDate();
+  // const month = months[language][currentDate.getMonth()];
+  // const year = currentDate.getFullYear();
+  // const weekday = weekdays[language][currentDate.getDay()];
+
+  // return `${day} ${month} ${year} ${weekday}`;
+
+  const day = currentDate.day;
+  const month = months[language][currentDate.month - 1];
+  const year = currentDate.year;
+  const weekday = weekdays[language][currentDate.weekday % 7];
 
   return `${day} ${month} ${year} ${weekday}`;
 }

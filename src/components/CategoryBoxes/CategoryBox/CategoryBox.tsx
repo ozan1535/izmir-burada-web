@@ -8,7 +8,6 @@ import { useParams } from "next/navigation";
 function CategoryBox({ item }: { item: ICategoryBox }) {
   const params = useParams();
   const { locale } = params;
-  console.log(locale, "CategoryBox");
   return (
     <div className="relative w-full h-52 my-5 bg-blue-200 rounded p-2 hover:shadow-2xl hover:duration-300">
       <Link href={`/${locale}${item.href[locale]}` || ""}>

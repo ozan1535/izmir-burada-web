@@ -71,7 +71,6 @@ export default function QuillEditor({ setContent }) {
     quillRef.current.on("text-change", () => {
       const html = editorRef.current.querySelector(".ql-editor")?.innerHTML;
       const lang = selectedLanguageRef.current;
-      console.log(lang);
       setData((prev) => ({
         ...prev,
         content: { ...prev.content, [lang]: html },
@@ -173,7 +172,6 @@ export default function QuillEditor({ setContent }) {
         content: { tr: "", en: "", de: "" },
         description: { tr: "", en: "", de: "" },
       });
-      console.log("Blog saved successfully", data);
     } catch (error) {
       console.error("Error saving blog:", error);
     }

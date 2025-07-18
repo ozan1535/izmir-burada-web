@@ -47,7 +47,6 @@ function Languages() {
             <li
               key={item.code}
               onClick={() => {
-                console.log(item);
                 setLanguageOpen(false);
                 router.replace(
                   // @ts-expect-error -- TypeScript will validate that only known `params`
