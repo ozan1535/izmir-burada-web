@@ -34,6 +34,7 @@ const Countdown = ({ targetTime }: { targetTime: string }) => {
 
     const timeDiff = targetDate.getTime() - currentTime.getTime();
 
+    console.log(currentTime, timeDiff, "hehehehe");
     if (timeDiff <= 0) {
       return { hours: 0, minutes: 0, seconds: 0 };
     }
@@ -42,7 +43,6 @@ const Countdown = ({ targetTime }: { targetTime: string }) => {
     const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
-    console.log(currentTime, timeDiff, hours, minutes, seconds, "hehehehe");
     return { hours, minutes, seconds };
   }
 
