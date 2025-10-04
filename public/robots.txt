@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /ads.txt
+Disallow: /api/
+Sitemap: https://izmir-burada.com/sitemap.xml
