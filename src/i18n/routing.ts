@@ -42,10 +42,10 @@ export const routing = defineRouting({
       en: "/where-is-my-bus",
       de: "/wo-ist-mein-bus",
     },
-    "/etkinlikler": {
-      tr: "/etkinlikler",
-      en: "/events",
-      de: "/veranstaltungen",
+    "/izmir-etkinlikler": {
+      tr: "/izmir-etkinlikler",
+      en: "/izmir-events",
+      de: "/izmir-veranstaltungen",
     },
     "/tuvalet-konumlari": {
       tr: "/tuvalet-konumlari",

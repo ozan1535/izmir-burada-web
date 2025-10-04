@@ -236,9 +236,9 @@ export const usefulInformations = [
       de: "VERANSTALTUNGEN",
     },
     href: {
-      tr: "/etkinlikler",
-      en: "/events",
-      de: "/veranstaltungen",
+      tr: "/izmir-etkinlikler",
+      en: "/izmir-events",
+      de: "/izmir-veranstaltungen",
     },
     media: "/assets/boxImages/etkinlikler.png",
   },
