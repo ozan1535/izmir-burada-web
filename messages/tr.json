@@ -27,6 +27,65 @@
       "scrollDown": "Aşağı kaydır"
     }
   },
+  "AboutUs": {
+    "title": "Hakkımızda",
+    "subtitle": "İzmir Burada Nedir?",
+    "mission": "🎯 Misyonumuz",
+    "p1": "İzmir Burada, İzmir ve çevresindeki yaşamı kolaylaştırmak amacıyla kurulmuş kapsamlı bir dijital platformdur. Şehrin sunduğu tüm hizmetler, etkinlikler ve fırsatları tek bir çatı altında toplayarak, İzmir'de yaşayan veya ziyaret eden herkesin ihtiyaçlarına cevap vermeyi hedefliyoruz.",
+    "p2": "İzmir'deki günlük yaşamı kolaylaştırmak, şehrin sunduğu tüm imkanları vatandaşlara ve ziyaretçilere en kolay şekilde ulaştırmak. Bilgiye erişimi demokratikleştirerek, herkesin İzmir'den en iyi şekilde faydalanmasını sağlamak.",
+    "title2": "🚀 Vizyonumuz",
+    "p3": "İzmir'in dijital rehberi olmak, şehrin tüm kaynaklarını tek platformda birleştirerek Türkiye'nin en kullanışlı şehir rehberi haline gelmek. Teknoloji ile şehir yaşamını entegre ederek modern yaşamın gereksinimlerini karşılamak.",
+    "title3": "Hizmetlerimiz",
+    "title4": "Ulaşım",
+    "p4": "Otobüs, vapur saatleri ve rota bilgileri",
+    "title5": "Sağlık",
+    "p5": "Hastaneler, eczaneler ve sağlık hizmetleri",
+    "title6": "Kültür & Sanat",
+    "p6": "Etkinlikler, müzeler ve kültürel mekanlar",
+    "title7": "Doğa",
+    "p7": "Plajlar, parklar ve doğal alanlar"
+  },
+  "PrivacyPolicy": {
+    "title": "Gizlilik Politikası",
+    "lastUpdate": "Son güncelleme: 5 Ekim 2025",
+    "p1": "olarak ziyaretçilerimizin gizliliğine önem veriyoruz. Bu Gizlilik Politikası, web sitemizi ziyaret ettiğinizde hangi bilgilerin toplandığını, bu bilgilerin nasıl kullanıldığını ve korunduğunu açıklar.",
+    "title2": "1. Toplanan Veriler",
+    "p2": "izmir-burada.com, kullanıcıların kişisel bilgilerini doğrudan toplamaz. Ancak, web sitemizi geliştirmek ve kullanıcı deneyimini iyileştirmek amacıyla Google Analytics hizmetinden yararlanıyoruz.",
+    "p3": "Google Analytics, ziyaretçi etkileşimlerini analiz etmek için çerezleri (cookies) kullanır. Bu veriler arasında şunlar yer alabilir:",
+    "list": "Ziyaret edilen sayfalar",
+    "list2": "Ziyaret süresi",
+    "list3": "Tarayıcı ve işletim sistemi bilgileri",
+    "list4": "IP adresi (anonimleştirilmiş)",
+    "p4": "Bu bilgiler, kimliğinizi belirlemek için değil, yalnızca istatistiksel analiz amacıyla kullanılmaktadır.",
+    "title3": "2. Çerezler ve Üçüncü Taraf Hizmetler",
+    "p5": "Web sitemiz, aşağıdaki üçüncü taraf hizmetleri kullanmaktadır:",
+    "list5": "Web sitesi trafiğini analiz etmek için",
+    "list6": "Reklam göstermek ve reklam performansını ölçmek için",
+    "p6": "Bu hizmetler çerezler kullanır. Çerezler, tarayıcınızda saklanan küçük veri dosyalarıdır ve web sitemizin performansını analiz etmemize yardımcı olur. Dilerseniz tarayıcı ayarlarınızdan çerezleri devre dışı bırakabilirsiniz.",
+    "p7": "Sitemizde Google AdSense reklamları gösterilmektedir. Google, bu reklamları göstermek için çerezler kullanabilir. Google'ın reklam ve içerik ağının gizlilik politikası için",
+    "title4": "3. Veri Paylaşımı",
+    "p8": "Toplanan veriler, üçüncü taraflarla paylaşılmamaktadır. Sadece Google Analytics ile sınırlı olan bu veriler, Google’ın kendi gizlilik politikaları çerçevesinde işlenir.",
+    "title5": "4. Veri Saklama",
+    "p9": "izmir-burada.com, herhangi bir şekilde kendi sunucularında, veri tabanında veya local storage üzerinde kullanıcı verilerini saklamaz.",
+    "link": "Google Gizlilik Politikası'nı inceleyebilirsiniz."
+  },
+  "TermsOfUse": {
+    "title": "Kullanım Şartları",
+    "lastUpdate": "Son güncelleme: 5 Ekim 2025",
+    "p1": "Bu web sitesini kullanarak aşağıdaki şartları kabul etmiş sayılırsınız. Lütfen siteyi kullanmadan önce bu şartları dikkatlice okuyunuz.",
+    "title2": "1. Hizmet Tanımı",
+    "p2": "izmir-burada.com, kullanıcılarına İzmir ve çevresiyle ilgili bilgi, içerik ve rehberlik hizmeti sunan bir web sitesidir. Sitedeki içerikler bilgilendirme amaçlıdır ve zaman zaman değişebilir.",
+    "title3": "2. Kullanım Koşulları",
+    "p3": "Web sitesini yalnızca yasal amaçlar için kullanabilirsiniz. izmir-burada.com üzerinde yer alan içerikleri izinsiz kopyalamak, çoğaltmak veya ticari amaçlarla kullanmak yasaktır.",
+    "title4": "3. Fikri Mülkiyet",
+    "p4": "Web sitesinde yer alan tüm yazılar, görseller, logolar ve diğer içerikler izmir-burada.com’a aittir ya da yasal kullanım izni alınmıştır. Herhangi bir içerik, izinsiz olarak kullanılamaz veya dağıtılamaz.",
+    "title5": "4. Sorumluluğun Sınırlandırılması",
+    "p5": "izmir-burada.com, sitedeki bilgilerin doğruluğu ve güncelliği konusunda azami özen gösterse de, bilgilerin kullanımı sonucu doğabilecek zararlardan sorumlu tutulamaz.",
+    "title6": "5. Dış Bağlantılar",
+    "p6": "Web sitemiz, harici sitelere bağlantılar içerebilir. Bu sitelerin içeriklerinden izmir-burada.com sorumlu değildir.",
+    "title7": "6. Şartlarda Değişiklik",
+    "p7": "izmir-burada.com, kullanım şartlarını dilediği zaman güncelleme hakkını saklı tutar. Güncellenmiş şartlar bu sayfada yayımlandığı andan itibaren geçerli olur."
+  },
   "NamazVakitleri": {
     "title": "İzmir Namaz Vakitleri"
   },
@@ -74,6 +133,7 @@
     "legal": "Yasal",
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfUse": "Kullanım Şartları",
+    "aboutUs": "Hakkımızda",
     "copyright": "Tüm hakları saklıdır."
   },
   "Metadata": {

@@ -1,5 +1,6 @@
 import React from "react";
 import { createMetadata } from "@/utils/helpers";
+import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata() {
   return createMetadata(
@@ -11,77 +12,59 @@ export async function generateMetadata() {
   );
 }
 
-export default function page() {
+export default async function page() {
+  const t = await getTranslations("PrivacyPolicy");
+
   return (
     <main className="max-w-3xl mx-auto px-4 py-10 mt-16">
-      <h1 className="text-3xl font-bold mb-6">Gizlilik Politikası</h1>
-      <p className="text-sm text-gray-500 mb-8">
-        Son güncelleme: 13 Mayıs 2025
-      </p>
+      <h1 className="text-3xl font-bold mb-6">{t("title")}</h1>
+      <p className="text-sm text-gray-500 mb-8">{t("lastUpdate")}</p>
 
       <p className="mb-4">
-        <strong>izmir-burada.com</strong> olarak ziyaretçilerimizin gizliliğine
-        önem veriyoruz. Bu Gizlilik Politikası, web sitemizi ziyaret ettiğinizde
-        hangi bilgilerin toplandığını, bu bilgilerin nasıl kullanıldığını ve
-        korunduğunu açıklar.
+        <strong>izmir-burada.com</strong> {t("p1")}
       </p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">1. Toplanan Veriler</h2>
-      <p className="mb-4">
-        izmir-burada.com, kullanıcıların kişisel bilgilerini doğrudan toplamaz.
-        Ancak, web sitemizi geliştirmek ve kullanıcı deneyimini iyileştirmek
-        amacıyla <strong>Google Analytics</strong> hizmetinden yararlanıyoruz.
-      </p>
-      <p className="mb-4">
-        Google Analytics, ziyaretçi etkileşimlerini analiz etmek için çerezleri
-        (cookies) kullanır. Bu veriler arasında şunlar yer alabilir:
-      </p>
+      <h2 className="text-xl font-semibold mt-6 mb-2">{t("title2")}</h2>
+      <p className="mb-4">{t("p2")}</p>
+      <p className="mb-4">{t("p3")}</p>
       <ul className="list-disc list-inside mb-4 space-y-1">
-        <li>Ziyaret edilen sayfalar</li>
-        <li>Ziyaret süresi</li>
-        <li>Tarayıcı ve işletim sistemi bilgileri</li>
-        <li>IP adresi (anonimleştirilmiş)</li>
+        <li>{t("list")}</li>
+        <li>{t("list2")}</li>
+        <li>{t("list3")}</li>
+        <li>{t("list4")}</li>
       </ul>
-      <p className="mb-4">
-        Bu bilgiler, kimliğinizi belirlemek için değil, yalnızca istatistiksel
-        analiz amacıyla kullanılmaktadır.
-      </p>
+      <p className="mb-4">{t("p4")}</p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">2. Çerezler</h2>
-      <p className="mb-4">
-        Web sitemiz, yalnızca Google Analytics tarafından kullanılan çerezleri
-        içerir. Bu çerezler, tarayıcınızda saklanan küçük veri dosyalarıdır ve
-        web sitemizin performansını analiz etmemize yardımcı olur. Dilerseniz
-        tarayıcı ayarlarınızdan çerezleri devre dışı bırakabilirsiniz.
-      </p>
+      <h2 className="text-xl font-semibold mt-6 mb-2">{t("title3")}</h2>
+      <p className="mb-4">{t("p5")}</p>
+      <ul className="list-disc list-inside mb-4 space-y-1">
+        <li>
+          <strong>Google Analytics:</strong> {t("list5")}
+        </li>
+        <li>
+          <strong>Google AdSense:</strong> {t("list6")}
+        </li>
+      </ul>
+      <p className="mb-4">{t("p6")}</p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">3. Veri Paylaşımı</h2>
+      <h3 className="text-lg font-semibold mt-4 mb-2">Google AdSense</h3>
       <p className="mb-4">
-        Toplanan veriler, üçüncü taraflarla <strong>paylaşılmamaktadır</strong>.
-        Sadece Google Analytics ile sınırlı olan bu veriler, Google’ın kendi
-        gizlilik politikaları çerçevesinde işlenir.
-      </p>
-
-      <h2 className="text-xl font-semibold mt-6 mb-2">4. Veri Saklama</h2>
-      <p className="mb-4">
-        izmir-burada.com, herhangi bir şekilde kendi sunucularında, veri
-        tabanında veya local storage üzerinde kullanıcı verilerini saklamaz.
-      </p>
-
-      <h2 className="text-xl font-semibold mt-6 mb-2">5. İletişim</h2>
-      <p className="mb-4">
-        Gizlilik politikamız hakkında sorularınız varsa, bizimle iletişime
-        geçmekten çekinmeyin:
-      </p>
-      <p className="mb-2">
-        📧 <strong>E-posta:</strong>{" "}
+        {t("p7")}
         <a
-          href="mailto:info@izmir-burada.com"
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
         >
-          info@izmir-burada.com
+          {t("link")}
         </a>
       </p>
+
+      <h2 className="text-xl font-semibold mt-6 mb-2">{t("title4")}</h2>
+      <p className="mb-4">{t("p8")}</p>
+
+      <h2 className="text-xl font-semibold mt-6 mb-2">{t("title5")}</h2>
+      <p className="mb-4">{t("p9")}</p>
     </main>
   );
 }

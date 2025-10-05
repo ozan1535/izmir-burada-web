@@ -27,6 +27,65 @@
       "scrollDown": "Nach unten scrollen"
     }
   },
+  "AboutUs": {
+    "title": "Über uns",
+    "subtitle": "Was gibt es hier in Izmir?",
+    "mission": "🎯 Unsere Mission",
+    "p1": "Izmir Here ist eine umfassende digitale Plattform, die Izmir und seine Umgebung verbessern soll. Indem wir alle Dienstleistungen, Veranstaltungen und Möglichkeiten der Stadt unter einem Dach vereinen, möchten wir allen Menschen, die in Izmir leben oder es besuchen, einen Service bieten.",
+    "p2": "Wir verbessern den Alltag in Izmir und bieten den einfachsten Zugang zu allen Möglichkeiten und Verwaltungsmöglichkeiten der Stadt. Durch die Demokratisierung des Informationszugangs stellen wir sicher, dass jeder Izmir optimal nutzen kann.",
+    "title2": "🚀 Unsere Vision",
+    "p3": "Wir wollen Izmirs digitaler Reiseführer sein und alle Ressourcen der Stadt auf einer einzigen Plattform bündeln, um der nützlichste Stadtführer der Türkei zu werden. Wir wollen modernen Lebensbedingungen gerecht werden, indem wir Städte mit Technologie verbinden.",
+    "title3": "Unsere Dienstleistungen",
+    "title4": "Transport",
+    "p4": "Bus-, Dampflok-Fahrpläne und Routeninformationen",
+    "title5": "Gesundheit",
+    "p5": "Krankenhäuser, Apotheken und Gesundheitsdienste",
+    "title6": "Kultur und Kunst",
+    "p6": "Veranstaltungen, Museen und Kulturstätten",
+    "title7": "Natur",
+    "p7": "Strände, Parks und Naturgebiete"
+  },
+  "PrivacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdate": "Letzte Aktualisierung: 5. Oktober 2025",
+    "p1": "Wir legen Wert auf die Privatsphäre unserer Besucher. Diese Datenschutzerklärung erläutert, welche Informationen beim Besuch unserer Website erfasst werden, wie diese verwendet und geschützt werden.",
+    "title2": "1. Erfasste Daten",
+    "p2": "izmir-burada.com erhebt keine personenbezogenen Daten von Nutzern. Wir nutzen jedoch Google Analytics, um unsere Website zu verbessern und das Nutzererlebnis zu optimieren.",
+    "p3": "Google Analytics verwendet Cookies zur Analyse der Besucherinteraktionen. Diese Daten können Folgendes umfassen:",
+    "list": "Besuchte Seiten",
+    "list2": "Dauer des Besuchs",
+    "list3": "Browser- und Betriebssysteminformationen",
+    "list4": "IP-Adresse (anonymisiert)",
+    "p4": "Diese Informationen werden nicht dazu verwendet, Sie persönlich zu identifizieren, sondern dienen ausschließlich statistischen Analysen.",
+    "title3": "2. Cookies und Dienste von Drittanbietern",
+    "p5": "Unsere Website nutzt die folgenden Dienste von Drittanbietern:",
+    "list5": "Zur Analyse des Website-Verkehrs.",
+    "list6": "Zur Anzeige von Anzeigen und zur Messung der Anzeigenleistung.",
+    "p6": "Diese Dienste verwenden Cookies. Cookies sind kleine Textdateien, die in Ihrem Browser gespeichert werden und uns bei der Analyse der Leistung unserer Website helfen. Sie können Cookies in Ihren Browsereinstellungen deaktivieren.",
+    "p7": "Auf unserer Website werden Google AdSense-Anzeigen geschaltet. Google kann Cookies zur Anzeige dieser Anzeigen verwenden. Die Datenschutzbestimmungen des Google-Anzeigen- und Content-Netzwerks finden Sie in der Datenschutzerklärung des Google-Anzeigen- und Content-Netzwerks.",
+    "title4": "3. Datenweitergabe.",
+    "p8": "Die erhobenen Daten werden nicht an Dritte weitergegeben. Diese Daten, beschränkt auf Google Analytics, werden gemäß den Datenschutzbestimmungen von Google verarbeitet.",
+    "title5": "4. Datenspeicherung.",
+    "p9": "izmir-burada.com speichert keinerlei Nutzerdaten auf seinen Servern, in Datenbanken oder im lokalen Speicher.",
+    "link": "Sie können die Datenschutzbestimmungen von Google einsehen."
+  },
+  "TermsOfUse": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdate": "Letzte Aktualisierung: 5. Oktober 2025",
+    "p1": "Durch die Nutzung dieser Website erklären Sie sich mit den folgenden Bedingungen einverstanden. Bitte lesen Sie diese Bedingungen vor der Nutzung sorgfältig durch.",
+    "title2": "1. Leistungsbeschreibung",
+    "p2": "izmir-burada.com ist eine Website, die Nutzern Informationen, Inhalte und Anleitungen zu Izmir und Umgebung bietet. Die Inhalte der Website dienen ausschließlich Informationszwecken und können sich von Zeit zu Zeit ändern.",
+    "title3": "2. Nutzungsbedingungen",
+    "p3": "Sie dürfen die Website nur für rechtmäßige Zwecke nutzen. Das unbefugte Kopieren, Reproduzieren oder die kommerzielle Nutzung der Inhalte von izmir-burada.com ist untersagt.",
+    "title4": "3. Geistiges Eigentum",
+    "p4": "Alle Texte, Bilder, Logos und sonstigen Inhalte der Website sind Eigentum von izmir-burada.com oder dürfen nur mit ausdrücklicher Genehmigung verwendet oder verbreitet werden. Erlaubnis.",
+    "title5": "4. Haftungsbeschränkung",
+    "p5": "Izmir-burada.com achtet mit größter Sorgfalt auf die Richtigkeit und Aktualität der Informationen auf dieser Website, haftet jedoch nicht für Schäden, die durch die Nutzung dieser Informationen entstehen.",
+    "title6": "5. Externe Links",
+    "p6": "Unsere Website kann Links zu externen Websites enthalten. izmir-burada.com ist nicht für deren Inhalt verantwortlich.",
+    "title7": "6. Änderungen der Nutzungsbedingungen",
+    "p7": "izmir-burada.com behält sich das Recht vor, die Nutzungsbedingungen jederzeit zu aktualisieren. Aktualisierte Bedingungen gelten ab dem Zeitpunkt ihrer Veröffentlichung auf dieser Seite."
+  },
   "NamazVakitleri": {
     "title": "İzmir Gebetszeiten"
   },
@@ -76,6 +135,7 @@
     "legal": "Rechtliches",
     "privacyPolicy": "Datenschutzrichtlinie",
     "termsOfUse": "Nutzungsbedingungen",
+    "aboutUs": "Über uns",
     "copyright": "Alle Rechte vorbehalten."
   },
   "Metadata": {

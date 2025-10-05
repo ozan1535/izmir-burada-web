@@ -27,6 +27,65 @@
       "scrollDown": "Scroll Down"
     }
   },
+  "AboutUs": {
+    "title": "About Us",
+    "subtitle": "What's Here in Izmir?",
+    "mission": "🎯 Our Mission",
+    "p1": "Izmir Here is a comprehensive digital platform established to improve Izmir and its wider community. By bringing all the services, events, and opportunities the city offers under one roof, we aim to serve everyone who lives or visits Izmir.",
+    "p2": "Improving daily life in Izmir, providing the easiest access to all the city's options and management. By democratizing access to information, we ensure everyone can make the most of Izmir.",
+    "title2": "🚀 Our Vision",
+    "p3": "To be Izmir's digital guide, combining all the city's resources on a single platform to become Türkiye's most useful city guide. To meet modern living conditions by integrating cities with technology.",
+    "title3": "Our Services",
+    "title4": "Transportation",
+    "p4": "Bus, steam timetables, and route information",
+    "title5": "Health",
+    "p5": "Hospitals, pharmacies, and healthcare services",
+    "title6": "Culture and Arts",
+    "p6": "Events, museums, and cultural venues",
+    "title7": "Nature",
+    "p7": "Beaches, parks, and natural areas"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Last updated: October 5, 2025",
+    "p1": "We value the privacy of our visitors. This Privacy Policy explains what information is collected when you visit our website, how it is used and protected.",
+    "title2": "1. Data Collected",
+    "p2": "izmir-burada.com does not directly collect personal information from users. However, we use Google Analytics to improve our website and enhance the user experience.",
+    "p3": "Google Analytics uses cookies to analyze visitor interactions. This data may include:",
+    "list": "Pages visited",
+    "list2": "Duration of visit",
+    "list3": "Browser and operating system information",
+    "list4": "IP address (anonymized)",
+    "p4": "This information is not used to identify you personally, but is used for statistical analysis only.",
+    "title3": "2. Cookies and Third-Party Services",
+    "p5": "Our website uses the following third-party services:",
+    "list5": "To analyze website traffic",
+    "list6": "To display ads and measure ad performance",
+    "p6": "These services use cookies. Cookies are small data files stored in your browser that help us analyze the performance of our website. You can disable cookies in your browser settings if you wish.",
+    "p7": "Google AdSense ads are displayed on our site. Google may use cookies to display these ads. For the privacy policy of Google's ad and content network, see the privacy policy of Google's ad and content network. ",
+    "title4": "3. Data Sharing",
+    "p8": "The data collected is not shared with third parties. This data, limited to Google Analytics, is processed in accordance with Google's own privacy policies.",
+    "title5": "4. Data Storage",
+    "p9": "izmir-burada.com does not store user data on its servers, databases, or local storage in any way.",
+    "link": "You can review the Google Privacy Policy."
+  },
+  "TermsOfUse": {
+    "title": "Terms of Use",
+    "lastUpdate": "Last updated: October 5, 2025",
+    "p1": "By using this website, you agree to the following terms. Please read these terms carefully before using the site.",
+    "title2": "1. Service Description",
+    "p2": "izmir-burada.com is a website that provides users with information, content, and guidance about Izmir and the surrounding area. The content on the site is for informational purposes only and may change from time to time.",
+    "title3": "2. Terms of Use",
+    "p3": "You may use the website only for lawful purposes. Unauthorized copying, reproduction, or commercial use of the content on izmir-burada.com is prohibited.",
+    "title4": "3. Intellectual Property",
+    "p4": "All text, images, logos, and other content on the website belong to izmir-burada.com or has been legally permitted to use it. Any content, It may not be used or distributed without permission.",
+    "title5": "4. Limitation of Liability",
+    "p5": "Although izmir-burada.com takes the utmost care to ensure that the information on the site is accurate and up-to-date, it cannot be held responsible for any damages that may arise from the use of this information.",
+    "title6": "5. External Links",
+    "p6": "Our website may contain links to external sites. izmir-burada.com is not responsible for the content of these sites.",
+    "title7": "6. Changes to Terms",
+    "p7": "izmir-burada.com reserves the right to update the terms of use at any time. Updated terms are effective from the moment they are published on this page."
+  },
   "NamazVakitleri": {
     "title": "İzmir Praying Times"
   },
@@ -76,6 +135,7 @@
     "legal": "Legal",
     "privacyPolicy": "Privacy Policy",
     "termsOfUse": "Terms of Use",
+    "aboutUs": "About Us",
     "copyright": "All rights reserved."
   },
   "Metadata": {

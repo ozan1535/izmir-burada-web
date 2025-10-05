@@ -82,5 +82,10 @@ export const routing = defineRouting({
       en: "/kontakt",
       de: "/contact",
     },
+    "/hakkimizda": {
+      tr: "/hakkimizda",
+      en: "/about-us",
+      de: "/uber-uns",
+    },
   },
 });

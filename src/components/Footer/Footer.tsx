@@ -94,12 +94,20 @@ async function Footer({ locale }) {
                     {t("privacyPolicy")}
                   </Link>
                 </li>
-                <li>
+                <li className="mb-4">
                   <Link
                     href={`/${locale}/kullanim-sartlari`}
                     className="hover:underline"
                   >
                     {t("termsOfUse")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${locale}/hakkimizda`}
+                    className="hover:underline"
+                  >
+                    {t("aboutUs")}
                   </Link>
                 </li>
               </ul>
