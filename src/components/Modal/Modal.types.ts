@@ -5,4 +5,5 @@ export interface IOpenModal {
 
 export interface IModal extends IOpenModal {
   onClick: () => void;
+  isError: boolean;
 }

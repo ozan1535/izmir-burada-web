@@ -1,7 +1,8 @@
 import React from "react";
 import { IModal } from "./Modal.types";
+import Link from "next/link";
 
-function Modal({ title, modalContent, onClick }: IModal) {
+function Modal({ title, modalContent, onClick, isError = false }: IModal) {
   return (
     <div className="fixed inset-0 z-50 flex justify-center items-center overflow-y-auto overflow-x-hidden">
       <div className="relative p-4 w-full max-w-2xl max-h-full">
@@ -39,6 +40,16 @@ function Modal({ title, modalContent, onClick }: IModal) {
               {modalContent}
             </div>
           </div>
+          {isError && (
+            <div className="flex justify-end">
+              <Link
+                href={"/"}
+                className="p-2 bg-blue-400 rounded text-white font-bold cursor-pointer hover:bg-blue-500"
+              >
+                Anasayfaya Dön
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </div>
