@@ -19,15 +19,19 @@ export async function generateMetadata() {
 
 async function etkinlikler() {
   const t = await getTranslations("Etkinlikler");
+  const now = new Date();
 
   const events = await fetchData<IEtkinlik[]>([
     "https://openapi.izmir.bel.tr/api/ibb/kultursanat/etkinlikler",
   ]);
+  const upcomingEvents = events[0].filter(
+    (event) => new Date(event.EtkinlikBaslamaTarihi) > now
+  );
 
-  const sortedEvents = events[0].sort(
+  const sortedEvents = upcomingEvents.sort(
     (a, b) =>
-      new Date(b.EtkinlikBaslamaTarihi).getTime() -
-      new Date(a.EtkinlikBaslamaTarihi).getTime()
+      new Date(a.EtkinlikBaslamaTarihi).getTime() -
+      new Date(b.EtkinlikBaslamaTarihi).getTime()
   );
 
   return (
@@ -89,7 +93,7 @@ async function etkinlikler() {
                   </span>
                 ) : (
                   <span className="text-gray-500 text-sm">
-                    {t("noTicketInfo")}
+                    {/*  {t("noTicketInfo")} */}
                   </span>
                 )}
               </div>
