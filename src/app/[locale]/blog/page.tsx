@@ -15,7 +15,7 @@ export async function generateMetadata() {
 }
 
 const prisma = new PrismaClient();
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 12;
 
 async function page({ params, searchParams }) {
   const { locale } = await params;
