@@ -125,12 +125,12 @@ export default async function Home({
         </div>
       </div>
       <div
-        className="w-full h-[35rem] overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat shadow-lg"
+        className="w-full h-[35rem] overflow-y-scroll bg-cover md:bg-fixed bg-center bg-no-repeat shadow-lg"
         style={{
           backgroundImage: "url('/assets/alacati.jpg')",
         }}
       >
-        <div className="h-full w-full flex flex-col justify-center items-center backdrop-brightness-75 text-white px-4">
+        <div className="h-full w-full flex flex-col justify-center items-center text-white px-4">
           <div className="text-lg font-bold tracking-wide text-center drop-shadow-md mb-4">
             {t("firstSection.websiteName")}
           </div>
@@ -151,7 +151,7 @@ export default async function Home({
         </div>
       </div>
 
-      <div className="p-10 flex flex-col justify-center items-center gap-5 bg-gray-100">
+      <div className="p-4 md:p-10 my-5 flex flex-col justify-center items-center gap-5 bg-gray-100">
         <p className="text-5xl font-black text-sky-600">
           {t("thirdSection.unforgettable")}
         </p>
@@ -159,7 +159,7 @@ export default async function Home({
 
         <PictureBoxes items={homePageUnforgettablePlaces} locale={locale} />
       </div>
-      <div className="p-10 flex flex-col justify-center items-center gap-5 bg-blue-100">
+      <div className="p-4 md:p-10 my-5 flex flex-col justify-center items-center gap-5 bg-blue-100">
         <p className="text-3xl font-black text-sky-600">
           {t("fourthSection.discover")}
         </p>
@@ -167,7 +167,7 @@ export default async function Home({
         <PictureBoxes items={homePageDiscoverIzmir} locale={locale} />
       </div>
 
-      <div className="p-10 flex flex-col justify-center items-center gap-5 bg-gray-100">
+      <div className="p-4 md:p-10 my-5 flex flex-col justify-center items-center gap-5 bg-gray-100">
         <p className="text-3xl font-black text-sky-600">
           {t("fifthSection.taste")}
         </p>

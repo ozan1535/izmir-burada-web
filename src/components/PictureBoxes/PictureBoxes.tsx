@@ -12,7 +12,7 @@ function PictureBoxes({
     <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {items.map((item) => (
         <li
-          className="relative lg:w-[300px] lg:h-[300px] w-[250px] h-[250px] group"
+          className="relative w-96 md:w-72 h-64 group"
           key={item.text[locale]}
         >
           <a
@@ -24,7 +24,7 @@ function PictureBoxes({
                 src={item.imageSource}
                 alt={item.text[locale]}
                 fill
-                className="object-cover"
+                className="object-cover w-full h-full"
               />
               <div
                 className={`absolute inset-0 ${item.bgColor} group-hover:opacity-80 group-hover:duration-500 bg-opacity-50 z-10`}
